@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*---------------Common--------------------*/
+label{
+    color: #191919;
+}
+a{
+    font-size: 18px;
+}
+p{}
+i{
+    color: #cacaca;
+    font-size: 20px !important;
+    position: relative;
+    top: -1px;
+}
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb
+{
+	background-color: #46b692;
+}
+/*--------------Input-----------------*/
+.input-group{
+    height: 60px;
+    margin-bottom: 30px;
+}
+.input-group-addon{
+    border: 1px solid #dbdbdb;
+    border-radius: 0;
+    background: transparent;
+}
+.form-control{
+    height: 60px;
+    border-radius: 0;
+    border:1px solid #dbdbdb;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+.form-control:focus {
+    border-color: #dbdbdb;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.form-group{
+    margin-bottom: 0;
+}
+.checkbox > label > input{
+    visibility: hidden;
+    display:block;
+    height:0;
+    width:0;
+    position:absolute;
+    overflow:hidden;
+}
+.checkbox > label > span{
+    height: 17px;
+    width: 17px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+::placeholder{
+    color: #cacaca;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: .5; 
+}
+/*--------------Button----------------*/
+.btn-ovto{
+    background: #46b692;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fefefe;
+    transition: .75s all;
+}
+.btn-ovto:hover{
+    background: #48CFAD;
+    color: #fefefe;
+}
+.btn-default.focus, .btn-default:focus {
+    color: #fefefe;
+    background-color: #46b692;
+    border-color: #46b692;
+}
+.btn-default.active.focus, 
+.btn-default.active:focus, 
+.btn-default.active:hover, 
+.btn-default:active.focus, 
+.btn-default:active:focus, 
+.btn-default:active:hover{
+    color: #fefefe;
+    background-color: #46b692;
+    border-color: #46b692;
+}
+.btn.active.focus, 
+.btn.active:focus, 
+.btn.focus, 
+.btn:active.focus, 
+.btn:active:focus, 
+.btn:focus{
+    outline: 0;
+    outline-offset: -2px;
+}
+.btn-default.active, .btn-default:active{
+    color: #fefefe;
+    background-color: #48CFAD;
+    border-color: #48CFAD;
+}
+/*--------------Panel-----------------*/
+.panel-body-ovto{
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+  
