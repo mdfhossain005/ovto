@@ -91,8 +91,11 @@ ul > li > a{
     text-decoration: none;
     color: #191919;
     font-size: 14px;
-    margin: 0 15px;
-    
+    margin: 0 15px; 
+}
+ul > li > a:hover{
+    text-decoration: none;
+    color: #191919;
 }
 
 
