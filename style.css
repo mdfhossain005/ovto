@@ -73,13 +73,32 @@ i{
 /*--------------Button----------------*/
 .btn-ovto{
     background: #46b692;
-    height: 60px;
+    height: 54px;
     border-radius: 5px;
     border: none;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
+    line-height: 42px;
+    margin-bottom: 15px;
     color: #fefefe;
     transition: .75s all;
+}
+.btn-ovto-line{
+    background: #ffffff;
+    height: 54px;
+    border-radius: 5px;
+    border: 1px solid #46b692;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 42px;
+    margin-bottom: 15px;
+    color: #46b692;
+    transition: .75s all;
+}
+.btn-ovto-line:hover{
+    background: #48CFAD;
+    color: #fefefe;
+    border: 1px solid #46b692;
 }
 .btn-ovto:hover{
     background: #48CFAD;
