@@ -21,10 +21,7 @@ i{
 }
 
 /*--------------Input-----------------*/
-.input-group{
-    height: 60px;
-    margin-bottom: 30px;
-}
+
 .input-group-addon{
     border: 1px solid #dbdbdb;
     border-radius: 0;
@@ -47,7 +44,7 @@ i{
     box-shadow: none;
 }
 .form-group{
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 .checkbox > label > input{
     visibility: hidden;

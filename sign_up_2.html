@@ -29,40 +29,50 @@
                 <div class="panel panel-default panel-ovto sign-in">
                     <div class="panel-body panel-body-ovto sign-in-body">
                         <h4 class="text-center">CREATE ACCOUNT</h4>
-                        <form>
+                        <form action="create_account.html">
                             <div class="form-group form-group-ovto">
                                 <label for="name">Restaurant's Name</label>
                                 <div class="input-group input-group-ovto">
-                                    <div class="input-group-addon input-group-addon-ovto"><i class="fa fa-user-o"></i></div>
+                                    <div class="input-group-addon input-group-addon-ovto">
+                                        <img src="img/signup/shop.svg" alt="" width="24">
+                                    </div>
                                     <input type="text" class="form-control form-control-ovto" id="name" placeholder="Enter your restaurent's name">
                                 </div>
                             </div>
                             <div class="form-group form-group-ovto">
                                 <label for="contact-no">Customer Support</label>
                                 <div class="input-group input-group-ovto">
-                                    <div class="input-group-addon input-group-addon-ovto"><i class="fa fa-phone"></i></div>
+                                    <div class="input-group-addon input-group-addon-ovto">
+                                        <img src="img/signup/phone.svg" alt="" width="24">
+                                    </div>
                                     <input type="text" class="form-control form-control-ovto" id="contact-no" placeholder="Enter the customer support number">
                                 </div>
                             </div>    
                             <div class="form-group form-group-ovto">
                                 <label for="email">Opening Time</label>
                                 <div class="input-group input-group-ovto">
-                                    <div class="input-group-addon input-group-addon-ovto"><i class="fa fa-envelope-o"></i></div>
+                                    <div class="input-group-addon input-group-addon-ovto">
+                                        <img src="img/signup/open-time.svg" alt="" width="24">
+                                    </div>
                                     <input type="email" class="form-control form-control-ovto" id="email" placeholder="Opening Time">
                                 </div>
                             </div>
                             <div class="form-group form-group-ovto">
                                 <label for="password">Closing Time</label>
                                 <div class="input-group input-group-ovto">
-                                    <div class="input-group-addon input-group-addon-ovto"><i class="fa fa-unlock-alt"></i></div>
+                                    <div class="input-group-addon input-group-addon-ovto">
+                                        <img src="img/signup/close-time.svg" alt="" width="24">
+                                    </div>
                                     <input type="password" class="form-control form-control-ovto" id="password" placeholder="Closing Time">                                    
                                 </div>
                             </div>
                             <div class="form-group form-group-ovto">
-                                    <label for="cpassword">Confirm Password</label>
+                                    <label for="cpassword">Ambassador Code</label>
                                     <div class="input-group input-group-ovto">
-                                        <div class="input-group-addon input-group-addon-ovto"><i class="fa fa-unlock-alt"></i></div>
-                                        <input type="password" class="form-control form-control-ovto" id="cpassword" placeholder="Re-enter your password">                                    
+                                        <div class="input-group-addon input-group-addon-ovto">
+                                            <img src="img/signup/lock-o.svg" alt="" width="24">
+                                        </div>
+                                        <input type="password" class="form-control form-control-ovto" id="cpassword" placeholder="Enter ambassador code (optional, you can skip)">                                    
                                     </div>
                                 </div>
                             <button type="submit" class="btn btn-default btn-ovto btn-block">SUBMIT</button>
