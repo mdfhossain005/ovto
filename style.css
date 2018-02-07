@@ -63,11 +63,41 @@ i{
 }
 ::placeholder{
     color: #cacaca;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     opacity: .5; 
 }
+
 /*--------------Button----------------*/
+.btn-success{
+    background: #a0d61d
+}
+.btn-danger{
+    background: #ff4876
+}
+.btn-warning{
+    background: #ffc250
+}
+.btn-primary{
+    background: #469af4
+}
+.btn-danger img, .btn-primary img, .btn-success img, .btn-warning img{
+    position: relative;
+    bottom: 42px;
+    left: 100px;
+}
+.btn-danger, .btn-primary, .btn-success, .btn-warning{
+    height: 54px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 48px;
+    margin-bottom: 15px;
+    color: #fefefe;
+    transition: .75s all;
+    padding-right: 40px;
+}
 .btn-ovto{
     background: #46b692;
     height: 54px;

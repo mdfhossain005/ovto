@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,800,900');
 
 body { 
     background: url('../img/sign_bg.jpg') no-repeat center center fixed; 
@@ -73,5 +74,32 @@ img{
     background : #48CFAD;
 }
 .btn-ovto{
-    line-height: 50px;
+    line-height: 48px;
+}
+
+.thumbnail {
+    padding: 0px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
+    border-color: none;
+}
+.media-left, .media>.pull-left {
+    padding-right: 20px;
+}
+.media-object {
+    border-radius: 4px;
+}
+
+.add_food_item_head{
+    font-size: 24px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
 }
