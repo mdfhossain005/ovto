@@ -1,0 +1,195 @@
+/* Sign Up Page ================================ */
+body{
+    background: url('../img/signup/sign_bg.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    display: block;
+}
+.signup-page {
+    padding-left: 0;
+    max-width: 360px;
+    margin: 2% auto;
+    overflow-x: hidden; 
+}
+.card {
+    box-shadow: none;
+    border-radius: 5px;
+}
+.card .body {
+    padding: 20px 50px;
+}
+.signup-page .signup-box .login {
+    font-size: 18px;
+    font-weight: 700;
+    color: #40514e;
+    margin-bottom: 25px;
+}
+.signup-page .signup-box .msg {
+    font-size: 20px;
+    font-weight: 300;
+    color: #40514e;
+    margin-bottom: 25px;
+}
+.input-group .input-group-addon {
+    padding: 6px 12px;
+    border: 1px solid #dbdbdb;
+    border-right: none;
+    border-radius: 0;
+}
+.input-group input[type="text"], 
+.input-group .form-control{
+    border: 1px solid #dbdbdb;
+    border-left: none;
+    border-radius: 0;
+}
+.form-group > .form-control{
+    border: 1px solid #dbdbdb;
+    height: 48px;
+    padding: 6px 14px !important;
+}
+[type="checkbox"] + label {
+    padding-left: 35px;
+    font-size: 15px;
+    font-weight: normal;
+    height: 0;
+    color: #cacaca;
+}
+.form-group label{
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    color: #191919;
+}
+.checkbox {
+    margin-bottom: 25px;
+}
+.signup-page .signup-box a {
+    font-size: 15px;
+    text-decoration: underline;
+    color: #cacaca; 
+    font-weight: 300;
+}
+.signup-page .signup-box .ac > label{
+    font-size: 15px;
+    color: #cacaca;  
+    font-weight: 300;
+}
+.signup-page  .signup-box  label > a{
+    color: #46b692;
+    font-weight: 300;
+}
+.modal-dialog {
+    margin: 200px auto;
+}
+/* .show-tick .dropdown-toggle {
+    height: 46px;
+    border: 0 !important;
+    font-size: 14px !important;
+    border-radius: 0 !important;
+} */
+.show-tick, .form-control-ovto {
+    width: 100% !important;
+    padding: 6px 0px !important;
+    height: 48px !important;
+}
+.show-tick > .dropdown-toggle:hover, .form-control-ovto > .dropdown-toggle:hover{
+    height: 46px;
+    background: transparent;
+    border-radius: 0;
+    padding:3px 12px !important;
+    bottom: 6px;
+}
+.show-tick > .dropdown-toggle:active, 
+.show-tick > .dropdown-toggle:focus,
+.form-control-ovto > .dropdown-toggle:active,
+.form-control-ovto > .dropdown-toggle:focus{
+    background: transparent;
+}
+.filter-option{
+    outline: 0;
+    z-index: 10;
+    color: #191919;
+}
+.btn-group{
+    box-shadow: none !important;
+    border: 0;
+}
+.btn-group:focus{
+    outline: 0;
+}
+.add:hover, .add:active, .add:focus{
+    background: #fff;
+}
+.btn-default:active, 
+.btn-default.active, 
+.open > .dropdown-toggle.btn-default{
+    background: #fff;
+    border: 0;
+    color: #cacaca;
+}
+.btn-default:active:hover, 
+.btn-default.active:hover, 
+.open > .dropdown-toggle.btn-default:hover, 
+.btn-default:active:focus, 
+.btn-default.active:focus, 
+.open > .dropdown-toggle.btn-default:focus, 
+.btn-default:active.focus, 
+.btn-default.active.focus, 
+.open > .dropdown-toggle.btn-default.focus{
+    background: #fff;
+    border: 0;
+    color: #cacaca;
+}
+.add img{
+    margin-right: 22px;
+}
+.add span.text{
+    margin-top:2px;
+    color: #cacaca;
+}
+.add span.caret{
+    bottom: 0 !important;
+    top: 13px;
+}
+ul.dropdown-menu li{
+    margin: 10px 20px;
+}
+
+
+.thumbnail {
+    padding: 0px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
+    border-color: none;
+}
+.media{
+    margin-bottom: 0px;
+}
+.media-left, .media>.pull-left {
+    padding-right: 20px;
+}
+.media-object {
+    border-radius: 4px;
+}
+textarea.form-control {
+    height: auto !important;
+}
+.add_food_item_head{
+    font-size: 24px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+}

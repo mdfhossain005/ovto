@@ -1,0 +1,99 @@
+.container{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: auto;
+    height: auto;
+    padding: 0;
+}
+.carousel-caption {
+    top: 10%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 0;
+    padding-top: 0;
+    text-shadow: none;
+}
+.carousel-caption h3{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 15px;
+    padding-top: 24px;
+}
+.carousel-caption p{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 20px;
+}
+.carousel-indicators {
+    bottom: 20px;
+    top: 39px;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    background-repeat: no-repeat;
+    opacity: 1;
+    text-shadow: none;
+    top: 18px; 
+}
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    margin: 1px 10px;
+}
+.carousel-indicators li.active{
+    width: 16px;
+    height: 16px;
+    margin: 0px 10px;
+}
+.slider-right{
+    margin: 40px 180px;
+}
+.slider-right p{
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.btn-ovto{
+    margin-top: 60px;
+}
+.btn-ovto-line{
+    margin-bottom: 30px;
+}
+.slider-right > a{
+    color: #191919;
+    font-size: 14px;
+    text-decoration: underline;
+    padding-bottom: 42px;
+    display: block;
+}
+.slider-right p > a{
+    text-decoration: underline;
+    color: #46b692;
+    font-size: 16px;
+    font-weight: 600;
+}
+ul.list-inline{
+    margin-top: 30px;
+}
+ul > li > a{
+    text-decoration: none;
+    color: #191919;
+    font-size: 14px;
+    margin: 0 15px; 
+}
+ul > li > a:hover{
+    text-decoration: none;
+    color: #191919;
+}
+
+

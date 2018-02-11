@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>OVTO</title>
+    <!-- Favicon-->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core Css -->
+    <link href="../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../css/materialize.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="../plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="../plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Bootstrap Select Css -->
+    <link href="../plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/sign.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes 
+    <link href="../css/themes/all-themes.css" rel="stylesheet" /> 
+    -->
+</head>
+<body class="signup-page">
+    
+    <div class="signup-box">
+        <div class="card">
+            <div class="body">
+                <form id="signup" action="">
+                    <div class="login text-center">CREATE ACCOUNT</div>
+                    <div class="form-group">
+                        <label for="name">Restaurant's Name</label>                        
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <img src="../img/signup/shop.svg" alt="" width="24">
+                            </span>
+                            <input type="text" class="form-control" name="name" placeholder="Enter your restaurent's name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Customer Support</label>                        
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <img src="../img/signup/phone.svg" alt="" width="24">
+                            </span>
+                            <input type="number" class="form-control" name="number" placeholder="Enter the customer support number" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="open">Opening Time</label>                        
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <img src="../img/signup/open-time.svg" alt="" width="24">
+                            </span>
+                            <input data-toggle="modal" data-target="#smallModal" type="text" class="form-control" name="open" placeholder="Opening Time" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="close">Closing Time</label>  
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <img src="../img/signup/close-time.svg" alt="" width="24">
+                            </span>
+                            <input data-toggle="modal" data-target="#smallModal" type="text" class="form-control" name="close" placeholder="Closing Time" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ambassadorcode">Ambassador Code</label>  
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <img src="../img/signup/lock-o.svg" alt="" width="24">
+                            </span>
+                            <input type="number" class="form-control" name="ambassadorcode" minlength="6" placeholder="Enter ambassador code (optional, you can skip)">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-block btn-lg btn-ovto waves-effect" type="submit">NEXT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Small Size -->
+    <div class="modal fade" id="smallModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    
+                </div>
+                <div class="modal-body">
+                    <select class="form-control show-tick">
+                        <option value="10">1:00</option>
+                        <option value="20">2:00</option>
+                        <option value="30">3:00</option>
+                        <option value="40">4:00</option>
+                        <option value="50">5:00</option>
+                        <option value="50">6:00</option>
+                        <option value="50">7:00</option>
+                        <option value="50">8:00</option>
+                        <option value="50">9:00</option>
+                        <option value="50">10:00</option>
+                        <option value="50">11:00</option>
+                        <option value="50">12:00</option>
+                    </select>
+                    <select class="form-control show-tick">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="40">40</option>
+                        <option value="50">50</option>
+                    </select>
+                    <select class="form-control show-tick">
+                        <option value="10">AM</option>
+                        <option value="20">PM</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link waves-effect">OK</button>
+                    <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery Core Js -->
+    <script src="../plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="../plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="../plugins/node-waves/waves.js"></script>
+
+    <!-- Select Plugin Js -->
+    <script src="../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Validation Plugin Js -->
+    <script src="../plugins/jquery-validation/jquery.validate.js"></script>
+    
+    
+    <!-- Custom Js -->
+    <script src="../js/custom.js"></script>
+    <script src="../js/pages/signup.js"></script>
+
+</body>
+
+</html>
