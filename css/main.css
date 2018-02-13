@@ -1,0 +1,60 @@
+.main{
+    margin-top: 80px;
+}
+.fb-profile img.fb-image-lg{
+    z-index: 0;
+    width: 100%;  
+    margin-bottom: 10px;
+}
+.fb-image-profile{
+    margin: -75px 10px 0px 50px;
+    z-index: 9;
+    width: 20%; 
+}
+.fb-profile-text b{
+    font-size: 16px;
+}
+.fb-profile-text b span span{
+    margin: 5px 15px;
+}
+
+.info-box-2 .icon img{
+    margin: 25px 0px;
+  }
+  .info-box-2.hover-zoom-effect .icon {
+    overflow: hidden; 
+  }
+  .info-box-2.hover-zoom-effect .icon img {
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+  }
+  
+  .info-box-2.hover-zoom-effect:hover .icon img {
+    opacity: 0.4;
+    -moz-transform: rotate(-32deg) scale(1.4);
+    -ms-transform: rotate(-32deg) scale(1.4);
+    -o-transform: rotate(-32deg) scale(1.4);
+    -webkit-transform: rotate(-32deg) scale(1.4);
+    transform: rotate(-32deg) scale(1.4); 
+  }
+  
+  .info-box-2.hover-expand-effect:after {
+    background-color: rgba(0, 0, 0, 0.05);
+    content: ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    color: transparent;
+    -moz-transition: all 0.95s;
+    -o-transition: all 0.95s;
+    -webkit-transition: all 0.95s;
+    transition: all 0.95s; 
+  }
+  
+  .info-box-2.hover-expand-effect:hover:after {
+    width: 100%; 
+  }

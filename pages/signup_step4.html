@@ -38,17 +38,18 @@
     <div class="container">
         <div class="row"> 
             <h4 class="text-center add_food_item_head">ADD MORE FOOD ITEM</h4>
-            <a href="signup_step3.html"><img src="../img/signup/arrow-left.svg" alt="" width="128"></a>
+            <a href="signup_step3.html"><img class="img-responsive pull-left" src="../img/signup/arrow-left.svg" alt="" width="128"></a>
         </div>
         <div class="row">
-            <div class="col-md-5 col-md-offset-1">
+            <form action="main.html">
+            <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1">
                 <div class="row">
-                    <div class="col-md-9" style="padding-left: 0;padding-right: 7.5px">
+                    <div class="col-xs-9 col-sm-9 col-md-9" style="padding-left: 0;padding-right: 7.5px">
                         <a href="#" class="thumbnail">
                             <img src="../img/signup/add-image.png" alt="">
                         </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-xs-3 col-sm-3 col-md-3">
                         <div class="media">
                             <div class="media-left">
                             <a href="#"><img class="media-object img-responsive" src="../img/signup/pasta.jpg" alt="..."></a>
@@ -72,38 +73,21 @@
                     </div>
                 </div>
                 <div class="row">
-                    <form action="">
                     <div class="form-group form-group-ovto">
-                        <label for="name">Generic Name</label>
-                        <input type="text" class="form-control form-control-ovto" id="name" placeholder="For example - Burger" style="border:none">
+                        <label for="genericname">Generic Name</label>
+                        <input type="text" class="form-control form-control-ovto" id="genericname" placeholder="For example - Burger" style="border:none">
                     </div>
                     <div class="form-group form-group-ovto">
-                        <label for="contact-no">Food Title</label>
-                        <input type="text" class="form-control form-control-ovto" id="contact-no" placeholder="For example - Chicken Burger" style="border:none">
+                        <label for="foodtitle">Food Title</label>
+                        <input type="text" class="form-control form-control-ovto" id="foodtitle" placeholder="For example - Chicken Burger" style="border:none">
                     </div>    
                     <div class="form-group form-group-ovto">
-                        <label for="email">Description</label>
-                        <textarea type="email" rows="10" class="form-control form-control-ovto" id="email" placeholder="Write a short description about the food" style="border:none"></textarea>
+                        <label for="description">Description</label>
+                        <textarea type="email" rows="10" class="form-control form-control-ovto" id="description" placeholder="Write a short description about the food" style="border:none"></textarea>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-md-offset-2">
-
-                <!-- <div class="form-group form-group-ovto">
-                    <label for="email">Add Category</label>
-                    <div class="input-group input-group-ovto">
-                        <div class="input-group-addon input-group-addon-ovto" style="background: #fff;">
-                            <img src="../img/signup/menu.svg" alt="" width="24"> 
-                        </div>
-                        <select class="form-control form-control-ovto" style="border:none">
-                            <option>Add category of your food</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                </div> -->
+            <div class="col-xs-12 col-sm-5 col-md-4 col-md-offset-2">
                 <div class="btn-group btn-block form-group">
                     <button type="button" class="btn btn-default dropdown-toggle btn-block form-control add" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img src="../img/signup/menu.svg" alt="" width="24" class="pull-left"> 
@@ -113,72 +97,109 @@
                     <ul class="dropdown-menu btn-block" style="margin-top: 0 !important;box-shadow: none;">
                         <li> Breakfast</li>
                         <li> Launch</li>
+                        <li><a href="#" data-toggle="modal" data-target="#addcategory" class="btn btn-default btn-ovto-line text-center" style="margin:145px 40px 10px 40px;font-size: 16px;font-weight:500;line-height:32px;color:#46b692"><i class="material-icons" style="float:none;">add</i> Add new category</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group btn-block form-group">
+                    <button type="button" class="btn btn-default dropdown-toggle btn-block form-control add" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                            <img src="../img/signup/menu-add.svg" alt="" width="24" class="pull-left"> 
+                            <span class="pull-left text">Add subcategory of your food</span>
+                            <span class="caret pull-right"></span>
+                    </button>
+                    <ul class="dropdown-menu btn-block" style="margin-top: 0 !important;box-shadow: none;">
+                        <li> Porota</li>
+                        <li> Kichuri</li>
                         
-                        <li><a href="#" class="btn btn-default btn-ovto-line text-center" style="margin:145px 40px 10px 40px;font-size: 16px;font-weight:500;line-height:32px;color:#46b692"><i class="material-icons" style="float:none;">add</i> Add new category</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#addsubcategory" class="btn btn-default btn-ovto-line text-center" style="margin:145px 40px 10px 40px;font-size: 16px;font-weight:500;line-height:32px;color:#46b692"><i class="material-icons" style="float:none;">add</i> Add new subcategory</a></li>
                     </ul>
                 </div>
 
-                <div class="btn-group btn-block form-group">
-                        <button type="button" class="btn btn-default dropdown-toggle btn-block form-control add" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="../img/signup/menu-add.svg" alt="" width="24" class="pull-left"> 
-                                <span class="pull-left text">Add subcategory of your food</span>
-                                <span class="caret pull-right"></span>
-                        </button>
-                        <ul class="dropdown-menu btn-block" style="margin-top: 0 !important;box-shadow: none;">
-                            <li> Porota</li>
-                            <li> Kichuri</li>
-                            
-                            <li><a href="#" class="btn btn-default btn-ovto-line text-center" style="margin:145px 40px 10px 40px;font-size: 16px;font-weight:500;line-height:32px;color:#46b692"><i class="material-icons" style="float:none;">add</i> Add new subcategory</a></li>
-                        </ul>
-                    </div>
-                      
-
-                <!-- <div class="form-group form-group-ovto">
-                    <label for="contact-no">Add Subcategory</label>
-                    <div class="input-group input-group-ovto">
-                        <div class="input-group-addon input-group-addon-ovto" style="background: #fff;">
-                            <img src="../img/signup/menu-add.svg" alt="" width="24"> 
-                        </div>
-                        <select class="form-control form-control-ovto" style="border:none;">
-                            <option>Add subcategory of your food</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                </div> -->
-
-                <div class="col-md-6" style="padding-left: 0;padding-right: 7.5px">
+                <div class="col-sm-6 col-md-6" style="padding-left: 0;padding-right: 7.5px">
                     <div class="form-group form-group-ovto">
                         <label for="password">Previous Price</label>
                         <input type="password" class="form-control" id="password" placeholder="Add previous price" style="border:none">     
                     </div>
                 </div>
-                <div class="col-md-6" style="padding-left: 7.5px;padding-right: 0">
+                <div class="col-sm-6 col-md-6" style="padding-left: 7.5px;padding-right: 0">
                     <div class="form-group form-group-ovto">
                         <label for="password">Actual Price</label>
                         <input type="password" class="form-control" id="password" placeholder="Add current price" style="border:none">                                    
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6" style="padding-right: 7.5px">
+                    <div class="col-sm-6 col-md-6" style="padding-right: 7.5px">
                         <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#available">AVAILABILTY <img src="../img/slider/arrow-right.svg" width="64" alt=""></button>
                     </div>
-                    <div class="col-md-6" style="padding-left: 7.5px;">
+                    <div class="col-sm-6 col-md-6" style="padding-left: 7.5px;">
                         <button type="button" class="btn btn-danger btn-block" data-toggle="modal" data-target="#discount">DISCOUNT <img src="../img/slider/arrow-right.svg" alt="" width="64"></button>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6" style="padding-right: 7.5px">
+                    <div class="col-sm-6 col-md-6" style="padding-right: 7.5px">
                         <button type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#vat">VAT <img src="../img/slider/arrow-right.svg" alt="" width="64"></button>
                     </div>
-                    <div class="col-md-6" style="padding-left: 7.5px;">
+                    <div class="col-sm-6 col-md-6" style="padding-left: 7.5px;">
                         <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#extracharge">EXTRA CHARGE <img src="../img/slider/arrow-right.svg" width="64" alt=""></button>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-default btn-ovto btn-block" style="margin-top: 230px;">SUBMIT</button>
-                </form> 
+            </div>    
+            </form> 
+        </div>
+    </div>
+ 
+
+    <div class="modal fade" id="addcategory" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="text-center">Add New Category</h4>                    
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">                      
+                        <input type="number" class="form-control" name="addpercentagediscount" placeholder="Add new category name">
+                    </div>
+                </div>    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-ovto btn-block waves-effect" data-dismiss="modal">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="addsubcategory" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="text-center">Add New Subcategory</h4>                    
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">                      
+                        <input type="number" class="form-control" name="addpercentagediscount" placeholder="Add new subcategory name">
+                    </div>
+                </div>    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-ovto btn-block waves-effect" data-dismiss="modal">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="addcategory" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="text-center">Add New Category</h4>                    
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="addpercentagediscount">Add Category</label>                        
+                        <input type="number" class="form-control" name="addpercentagediscount" placeholder="Enter the percentage of your discount">
+                    </div>
+                </div>    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-ovto btn-block waves-effect" data-dismiss="modal">SUBMIT</button>
+                </div>
             </div>
         </div>
     </div>
@@ -332,14 +353,10 @@
 
     <!-- Select Plugin Js -->
     <script src="../plugins/bootstrap-select/js/bootstrap-select.js"></script>
-
-    <!-- Validation Plugin Js -->
-    <script src="../plugins/jquery-validation/jquery.validate.js"></script>
     
     
     <!-- Custom Js -->
     <script src="../js/custom.js"></script>
-    <script src="../js/pages/signup.js"></script>
 
 </body>
 

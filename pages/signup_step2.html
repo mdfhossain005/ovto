@@ -35,7 +35,7 @@
     <div class="signup-box">
         <div class="card">
             <div class="body">
-                <form id="signup" action="">
+                <form id="signup" action="signup_step3.html">
                     <div class="login text-center">CREATE ACCOUNT</div>
                     <div class="form-group">
                         <label for="name">Restaurant's Name</label>                        
@@ -43,7 +43,7 @@
                             <span class="input-group-addon">
                                 <img src="../img/signup/shop.svg" alt="" width="24">
                             </span>
-                            <input type="text" class="form-control" name="name" placeholder="Enter your restaurent's name" required>
+                            <input type="text" class="form-control" name="name" placeholder="Enter your restaurent's name">
                         </div>
                     </div>
                     <div class="form-group">
@@ -52,7 +52,7 @@
                             <span class="input-group-addon">
                                 <img src="../img/signup/phone.svg" alt="" width="24">
                             </span>
-                            <input type="number" class="form-control" name="number" placeholder="Enter the customer support number" required>
+                            <input type="number" class="form-control" name="number" placeholder="Enter the customer support number">
                         </div>
                     </div>
                     <div class="form-group">
@@ -61,7 +61,7 @@
                             <span class="input-group-addon">
                                 <img src="../img/signup/open-time.svg" alt="" width="24">
                             </span>
-                            <input data-toggle="modal" data-target="#smallModal" type="text" class="form-control" name="open" placeholder="Opening Time" required>
+                            <input id="opentime" data-toggle="modal" data-target="#openModal" type="text" class="form-control" name="open" placeholder="Opening Time">
                         </div>
                     </div>
                     <div class="form-group">
@@ -70,7 +70,7 @@
                             <span class="input-group-addon">
                                 <img src="../img/signup/close-time.svg" alt="" width="24">
                             </span>
-                            <input data-toggle="modal" data-target="#smallModal" type="text" class="form-control" name="close" placeholder="Closing Time" required>
+                            <input id="closetime" data-toggle="modal" data-target="#closeModal" type="text" class="form-control" name="close" placeholder="Closing Time">
                         </div>
                     </div>
                     <div class="form-group">
@@ -89,42 +89,79 @@
         </div>
     </div>
 
-    <!-- Small Size -->
-    <div class="modal fade" id="smallModal" tabindex="-1" role="dialog">
+    
+    <div class="modal fade" id="openModal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-sm" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    
-                </div>
                 <div class="modal-body">
-                    <select class="form-control show-tick">
-                        <option value="10">1:00</option>
-                        <option value="20">2:00</option>
-                        <option value="30">3:00</option>
-                        <option value="40">4:00</option>
-                        <option value="50">5:00</option>
-                        <option value="50">6:00</option>
-                        <option value="50">7:00</option>
-                        <option value="50">8:00</option>
-                        <option value="50">9:00</option>
-                        <option value="50">10:00</option>
-                        <option value="50">11:00</option>
-                        <option value="50">12:00</option>
+                    <select id="openhour" class="form-control show-tick" >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
                     </select>
-                    <select class="form-control show-tick">
+                    <select id="openminute" class="form-control show-tick">
+                        <option value="00">00</option>
                         <option value="10">10</option>
                         <option value="20">20</option>
                         <option value="30">30</option>
                         <option value="40">40</option>
                         <option value="50">50</option>
                     </select>
-                    <select class="form-control show-tick">
+                    <select id="optime" class="form-control show-tick">
                         <option value="10">AM</option>
                         <option value="20">PM</option>
                     </select>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-link waves-effect">OK</button>
+                    <button type="button" class="btn btn-link waves-effect" id="okopen" data-dismiss="modal">OK</button>
+                    <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="closeModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <select id="closehour" class="form-control show-tick" >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select id="closeminute" class="form-control show-tick">
+                        <option value="00">00</option>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="40">40</option>
+                        <option value="50">50</option>
+                    </select>
+                    <select id="cltime" class="form-control show-tick">
+                        <option value="10">AM</option>
+                        <option value="20">PM</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link waves-effect" id="okclose" data-dismiss="modal">OK</button>
                     <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
                 </div>
             </div>
@@ -142,14 +179,27 @@
 
     <!-- Select Plugin Js -->
     <script src="../plugins/bootstrap-select/js/bootstrap-select.js"></script>
-
-    <!-- Validation Plugin Js -->
-    <script src="../plugins/jquery-validation/jquery.validate.js"></script>
-    
     
     <!-- Custom Js -->
     <script src="../js/custom.js"></script>
-    <script src="../js/pages/signup.js"></script>
+    
+
+    <script>
+        $(function(){
+			$("#okopen").click(function(){
+				var selectHour = $("#openhour option:selected").text();
+				var selectMin = $("#openminute option:selected").text();
+				var selectTime = $("#optime option:selected").text();
+                $("#opentime").val(selectHour+ ":" + selectMin + selectTime);
+            });
+            $("#okclose").click(function(){
+				var selectHour = $("#closehour option:selected").text();
+				var selectMin = $("#closeminute option:selected").text();
+				var selectTime = $("#cltime option:selected").text();
+                $("#closetime").val(selectHour+ ":" + selectMin + selectTime);
+			});
+		});
+    </script>
 
 </body>
 
