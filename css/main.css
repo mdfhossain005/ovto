@@ -58,3 +58,46 @@
   .info-box-2.hover-expand-effect:hover:after {
     width: 100%; 
   }
+  .info-box-2 .content .text {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+.info-box-2 .content .number {
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+}
+.info-box-2 {
+    box-shadow: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.bg-violet{
+    background: -webkit-linear-gradient(20deg, rgb(39, 29, 93) 0%, rgb(29, 130, 182) 100%);
+    background: -o-linear-gradient(20deg, rgb(39, 29, 93) 0%, rgb(29, 130, 182) 100%);
+    background: -ms-linear-gradient(20deg, rgb(39, 29, 93) 0%, rgb(29, 130, 182) 100%);
+    background: -moz-linear-gradient(20deg, rgb(39, 29, 93) 0%, rgb(29, 130, 182) 100%);
+    background: linear-gradient(70deg, rgb(39, 29, 93) 0%, rgb(29, 130, 182) 100%);
+}
+.bg-blue{
+    background: -webkit-linear-gradient(208deg, rgb(103, 115, 231) 0%, rgb(46, 41, 97) 100%);
+    background: -o-linear-gradient(208deg, rgb(103, 115, 231) 0%, rgb(46, 41, 97) 100%);
+    background: -ms-linear-gradient(208deg, rgb(103, 115, 231) 0%, rgb(46, 41, 97) 100%);
+    background: -moz-linear-gradient(208deg, rgb(103, 115, 231) 0%, rgb(46, 41, 97) 100%);
+    background: linear-gradient(242deg, rgb(103, 115, 231) 0%, rgb(46, 41, 97) 100%);
+}
+.bg-light-blue{
+    background: -webkit-linear-gradient(20deg, rgb(121, 86, 236) 0%, rgb(47, 185, 248) 100%);
+    background: -o-linear-gradient(20deg, rgb(121, 86, 236) 0%, rgb(47, 185, 248) 100%);
+    background: -ms-linear-gradient(20deg, rgb(121, 86, 236) 0%, rgb(47, 185, 248) 100%);
+    background: -moz-linear-gradient(20deg, rgb(121, 86, 236) 0%, rgb(47, 185, 248) 100%);
+    background: linear-gradient(70deg, rgb(121, 86, 236) 0%, rgb(47, 185, 248) 100%);
+}
+.bg-cyan{
+    background: -webkit-linear-gradient(20deg, rgb(0, 159, 197) 0%, rgb(60, 236, 176) 100%);
+    background: -o-linear-gradient(20deg, rgb(0, 159, 197) 0%, rgb(60, 236, 176) 100%);
+    background: -ms-linear-gradient(20deg, rgb(0, 159, 197) 0%, rgb(60, 236, 176) 100%);
+    background: -moz-linear-gradient(20deg, rgb(0, 159, 197) 0%, rgb(60, 236, 176) 100%);
+    background: linear-gradient(70deg, rgb(0, 159, 197) 0%, rgb(60, 236, 176) 100%);
+}
