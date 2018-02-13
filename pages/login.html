@@ -28,52 +28,57 @@
     -->
 </head>
 
-<body class="signup-page">
+<body>
     
-    <div class="signup-box">
+    <section>
+        <div class="signup-page">
+            <div class="signup-box">
         
-        <div class="card">
-            <div class="body">
-                <form id="login" action="">
-                    <div class="login text-center">LOGIN</div>
-                    <div class="msg text-center">Welcome to Ovto</div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>                        
-                        <div class="input-group">
-                            <span class="input-group-addon">
-                                <img src="../img/signup/email.svg" alt="" width="24">
-                            </span>
-                            <input type="email" class="form-control" name="email" placeholder="Enter your email address">
-                        </div>
+                <div class="card">
+                    <div class="body">
+                        <form id="login" action="">
+                            <div class="login text-center">LOGIN</div>
+                            <div class="msg text-center">Welcome to Ovto</div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>                        
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <img src="../img/signup/email.svg" alt="" width="24">
+                                    </span>
+                                    <input type="email" class="form-control" name="email" placeholder="Enter your email address">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Password</label>  
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <img src="../img/signup/lock-o.svg" alt="" width="24">
+                                    </span>
+                                    <input type="password" class="form-control" name="password" minlength="6" placeholder="Enter your password">
+                                </div>
+                            </div>
+                            <div class="checkbox pull-right">
+                                <span>
+                                    <input type="checkbox" name="terms" id="terms" class="filled-in chk-col"> 
+                                    <label for="terms">Remember me</label> 
+                                </span>
+                            </div>
+        
+                            <button type="submit" class="btn btn-block btn-lg btn-ovto waves-effect" type="submit">LOGIN</button>
+        
+                            <div class="m-t-25 m-b--5 text-center">
+                                <a href="">Forgot Password?</a>
+                            </div>
+                            <div class="m-t-25 m-b--5 text-center ac">
+                                <label for="terms">Don’t have an account? <a href="signup_step1.html"> Create Account</a></label>
+                            </div>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Password</label>  
-                        <div class="input-group">
-                            <span class="input-group-addon">
-                                <img src="../img/signup/lock-o.svg" alt="" width="24">
-                            </span>
-                            <input type="password" class="form-control" name="password" minlength="6" placeholder="Enter your password">
-                        </div>
-                    </div>
-                    <div class="checkbox pull-right">
-                        <span>
-                            <input type="checkbox" name="terms" id="terms" class="filled-in chk-col"> 
-                            <label for="terms">Remember me</label> 
-                        </span>
-                    </div>
-
-                    <button type="submit" class="btn btn-block btn-lg btn-ovto waves-effect" type="submit">LOGIN</button>
-
-                    <div class="m-t-25 m-b--5 text-center">
-                        <a href="">Forgot Password?</a>
-                    </div>
-                    <div class="m-t-25 m-b--5 text-center ac">
-                        <label for="terms">Don’t have an account? <a href="signup_step1.html"> Create Account</a></label>
-                    </div>
-                </form>
+                </div>
+                
             </div>
         </div>
-    </div>
+    </section>
 
 
     <!-- Jquery Core Js -->
@@ -87,7 +92,6 @@
     
     <!-- Custom Js -->
     <script src="../js/custom.js"></script>
-    <script src="../js/pages/login.js"></script>
 
 </body>
 

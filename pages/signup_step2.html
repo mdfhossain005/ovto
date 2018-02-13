@@ -30,64 +30,68 @@
     <link href="../css/themes/all-themes.css" rel="stylesheet" /> 
     -->
 </head>
-<body class="signup-page">
+<body>
     
-    <div class="signup-box">
-        <div class="card">
-            <div class="body">
-                <form id="signup" action="signup_step3.html">
-                    <div class="login text-center">CREATE ACCOUNT</div>
-                    <div class="form-group">
-                        <label for="name">Restaurant's Name</label>                        
-                        <div class="input-group">
-                            <span class="input-group-addon">
-                                <img src="../img/signup/shop.svg" alt="" width="24">
-                            </span>
-                            <input type="text" class="form-control" name="name" placeholder="Enter your restaurent's name">
-                        </div>
+    <section>
+        <div class="signup-page">
+            <div class="signup-box">
+                <div class="card">
+                    <div class="body">
+                        <form id="signup" action="signup_step3.html">
+                            <div class="login text-center">CREATE ACCOUNT</div>
+                            <div class="form-group">
+                                <label for="name">Restaurant's Name</label>                        
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <img src="../img/signup/shop.svg" alt="" width="24">
+                                    </span>
+                                    <input type="text" class="form-control" name="name" placeholder="Enter your restaurent's name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="number">Customer Support</label>                        
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <img src="../img/signup/phone.svg" alt="" width="24">
+                                    </span>
+                                    <input type="number" class="form-control" name="number" placeholder="Enter the customer support number">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="open">Opening Time</label>                        
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <img src="../img/signup/open-time.svg" alt="" width="24">
+                                    </span>
+                                    <input id="opentime" data-toggle="modal" data-target="#openModal" type="text" class="form-control" name="open" placeholder="Opening Time">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="close">Closing Time</label>  
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <img src="../img/signup/close-time.svg" alt="" width="24">
+                                    </span>
+                                    <input id="closetime" data-toggle="modal" data-target="#closeModal" type="text" class="form-control" name="close" placeholder="Closing Time">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="ambassadorcode">Ambassador Code</label>  
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <img src="../img/signup/lock-o.svg" alt="" width="24">
+                                    </span>
+                                    <input type="number" class="form-control" name="ambassadorcode" minlength="6" placeholder="Enter ambassador code (optional, you can skip)">
+                                </div>
+                            </div>
+        
+                            <button type="submit" class="btn btn-block btn-lg btn-ovto waves-effect" type="submit">NEXT</button>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label for="number">Customer Support</label>                        
-                        <div class="input-group">
-                            <span class="input-group-addon">
-                                <img src="../img/signup/phone.svg" alt="" width="24">
-                            </span>
-                            <input type="number" class="form-control" name="number" placeholder="Enter the customer support number">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="open">Opening Time</label>                        
-                        <div class="input-group">
-                            <span class="input-group-addon">
-                                <img src="../img/signup/open-time.svg" alt="" width="24">
-                            </span>
-                            <input id="opentime" data-toggle="modal" data-target="#openModal" type="text" class="form-control" name="open" placeholder="Opening Time">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="close">Closing Time</label>  
-                        <div class="input-group">
-                            <span class="input-group-addon">
-                                <img src="../img/signup/close-time.svg" alt="" width="24">
-                            </span>
-                            <input id="closetime" data-toggle="modal" data-target="#closeModal" type="text" class="form-control" name="close" placeholder="Closing Time">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="ambassadorcode">Ambassador Code</label>  
-                        <div class="input-group">
-                            <span class="input-group-addon">
-                                <img src="../img/signup/lock-o.svg" alt="" width="24">
-                            </span>
-                            <input type="number" class="form-control" name="ambassadorcode" minlength="6" placeholder="Enter ambassador code (optional, you can skip)">
-                        </div>
-                    </div>
-
-                    <button type="submit" class="btn btn-block btn-lg btn-ovto waves-effect" type="submit">NEXT</button>
-                </form>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     
     <div class="modal fade" id="openModal" tabindex="-1" role="dialog">
