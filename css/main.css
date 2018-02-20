@@ -101,3 +101,141 @@
     background: -moz-linear-gradient(20deg, rgb(0, 159, 197) 0%, rgb(60, 236, 176) 100%);
     background: linear-gradient(70deg, rgb(0, 159, 197) 0%, rgb(60, 236, 176) 100%);
 }
+
+
+/* Team Section Area
+=============================== */
+.single-member {
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    padding-bottom: 25px;
+    margin: 0 10px;
+    text-align: left;
+}
+.description{
+      background: #fff;
+      padding: 80px 20px 20px 20px;
+      position: relative;
+      bottom: 50px;
+}
+.description h3 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+.description h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.overlay-hover:hover .overlay-effect{
+    opacity:1;
+   -webkit-transition: top 0.35s ease 0s;
+    -o-transition: top 0.35s ease 0s;
+    transition: top 0.35s ease 0s;
+    top: 0px;
+}
+.overlay-hover {
+    position: relative;
+    overflow:hidden;
+    z-index: 100;
+    margin: 0 10px;
+}
+.overlay-hover img{
+    width: 100%!important;
+}
+.overlay-effect ul.social{
+    bottom:5%;
+    position: absolute;
+    width: 100%;
+}
+.overlay-effect ul.social li{
+    padding: 10px 0px;
+}
+
+.overlay-effect ul.social i{
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.overlay-effect ul li a {
+    text-decoration: none;
+    color: #4E4E4E;
+}
+
+/* Carousel  TEAM Css
+=========================== */
+.team-items{
+        width:100%;
+        height:auto;
+        position:relative;
+        float: left;
+    }
+
+#owl-demo .item{
+  overflow: hidden;
+}
+
+#owl-demo .owl-item{
+  margin: 0 auto;
+}
+
+#owl-demo .item img{
+  border: 3px solid #ffffff;
+  padding-top: 20px;
+  position: relative;
+  top: 15px;
+}
+#team  .owl-theme .owl-controls .owl-buttons{
+    padding: 0px;
+}
+.owl-carousel {
+    display: block!important;
+}
+
+ #team .owl-theme .owl-controls .owl-buttons .owl-prev {
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    border-radius: 50%;
+    padding-left: 8px!important;
+    padding-top: 6px;
+    position: absolute;
+    left: -80px;
+    top: 30%;
+    opacity:1;
+}
+#team .owl-theme .owl-controls .owl-buttons .owl-next {
+   width: 50px;
+   height: 50px;
+   font-size: 35px;
+   border-radius: 50%;
+   padding-left: 12px;
+   padding-top: 6px;
+   position: absolute;
+   right:-80px;
+    top: 30%;
+    opacity:1;
+}
+ #team .owl-theme .owl-controls .owl-buttons .owl-prev
+,#team .owl-theme .owl-controls .owl-buttons .owl-next{
+    -webkit-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+ #team .owl-theme .owl-controls .owl-buttons .owl-prev:hover
+,#team .owl-theme .owl-controls .owl-buttons .owl-next:hover {
+}
+.owl-theme .owl-controls .owl-buttons { 
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next,
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+    float: left;
+    margin: 0px 10px;
+}

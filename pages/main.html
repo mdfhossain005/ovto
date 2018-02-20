@@ -20,14 +20,15 @@
     <!-- Animation Css -->
     <link href="../plugins/animate-css/animate.css" rel="stylesheet" />
 
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="../plugins/owl-carousel/css/owl.carousel.css"/>
+    <link rel="stylesheet" href="../plugins/owl-carousel/css/owl.theme.css"/>
 
     <!-- Custom Css -->
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
 
-    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes 
-    <link href="../css/themes/all-themes.css" rel="stylesheet" /> 
-    -->
+    <!-- <link href="../css/themes/all-themes.css" rel="stylesheet" /> -->
 </head>
 <body>
 
@@ -295,7 +296,7 @@
                         <img class="img-responsive" src="../img/main/Inside-Restaurant.jpg" alt="" style="margin-top:10px;">
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="margin-bottom:50px;">
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-left:0;">
                         <div class="info-box-2 bg-violet hover-zoom-effect">
                             <div class="icon">
@@ -342,8 +343,69 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+
+                    <div id="owl-demo" class="owl-carousel owl-theme team-items">
+                        <div class="item">
+                            <div class="overlay-hover">
+                                <img src="../img/main/01burgers.png" alt="" class="img-responsive">
+                            </div>
+                            <div class="single-member">
+                                <div class="description">
+                                    <h3>Burger</h3>
+                                    <h5>BEEF BURGER</h5>
+                                </div>
+                            </div>
+                        </div>  <!-- item wrapper end -->
+                        <div class="item">
+                            <div class="overlay-hover">
+                                <img src="../img/main/02nachos.png" alt="" class="img-responsive">
+                            </div>
+                            <div class="single-member">
+                                <div class="description">
+                                    <h3>Nachos</h3>
+                                    <h5>MAXICAN NACHOS</h5>
+                                </div>
+                            </div>
+                        </div>  <!-- item wrapper end -->
+                        <div class="item">
+                            <div class="overlay-hover">
+                                <img src="../img/main/03food.png" alt="" class="img-responsive">
+                            </div>
+                            <div class="single-member">
+                                <div class="description">
+                                    <h3>Fried Rice</h3>
+                                    <h5>CHICKEN RICE</h5>
+                                </div>
+                            </div>
+                        </div>  <!-- item wrapper end -->
+                        <div class="item">
+                            <div class="overlay-hover">
+                                <img src="../img/main/01burgers.png" alt="" class="img-responsive">
+                            </div>
+                            <div class="single-member">
+                                <div class="description">
+                                    <h3>John Abraham</h3>
+                                    <h5>Chief Designer</h5>
+                                </div>
+                            </div>
+                        </div>  <!-- item wrapper end -->
+                        <div class="item">
+                            <div class="single-member">
+                                <div class="description">
+                                    <h3>John Abraham</h3>
+                                    <h5>Chief Designer</h5>
+                                </div>
+                            </div>
+                        </div>  <!-- item wrapper end -->
+        
+                    </div>
+
+                </div>
             </div>
         </div>
+
+
     </section>
 
     <!-- Jquery Core Js -->
@@ -357,12 +419,47 @@
 
     <!-- Slimscroll Plugin Js -->
     <script src="../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="../plugins/owl-carousel/js/owl.carousel.min.js"></script>
     
     <!-- Custom Js -->
     <script src="../js/custom.js"></script>
     
     <!-- Demo Js -->
     <script src="../js/demo.js"></script>
+
+    <script>
+        $("#owl-demo").owlCarousel({
+  
+            navigation : true, // Show next and prev buttons
+            // navigationText: ["prev","next"], 
+            navigationText: [
+                "<i class='material-icons'>chevron_left</i>",
+                "<i class='material-icons'>chevron_right</i>"
+                ],
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            autoPlay: false,  
+            items : 4,
+            itemsDesktop:[1199,4],  
+            itemsDesktopSmall:[979,3],  //As above.
+            itemsTablet:[768,3],    //As above.
+            itemsMobile:[479,1],    //As above
+            goToFirst: true,    //Slide to first item if autoPlay reach end
+            goToFirstSpeed:1000 
+        });
+
+
+        // Custom Navigation Events
+        $(".next").click(function(){
+        owl.trigger('owl.next');
+        })
+        $(".prev").click(function(){
+        owl.trigger('owl.prev');
+        })
+        
+    </script>
 
 </body>
 
