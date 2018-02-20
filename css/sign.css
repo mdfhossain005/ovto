@@ -188,9 +188,24 @@ textarea.form-control {
     font-weight: 600;
     margin-top: 20px;
 }
+.image-upload{
+    line-height: 0;
+}
+.image-upload > input{
+    display: none;
+}
+.file-input{
+    margin: 0;
+    line-height: 0;
+}
 
+.image-upload img{
+    width: 80px;
+    cursor: pointer;
+    border-radius: 3px;
+}
 
-.ajax-upload-dragdrop {
+/* .ajax-upload-dragdrop {
     border: none;
     width: auto !important;
     color: #DADCE3;
@@ -243,7 +258,4 @@ textarea.form-control {
 .ajax-file-upload-preview {
     float: left;
     margin: 0 27px;
-}
-/* .ajax-file-upload-container {
-    padding: 0px 0px 65px 0px;
 } */
