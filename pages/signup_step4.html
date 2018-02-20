@@ -24,13 +24,14 @@
     <!-- Bootstrap Select Css -->
     <link href="../plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
 
+    <!-- Image Upload Css -->
+    <link href="../plugins/image-upload/image-upload.css" rel="stylesheet" />
+
     <!-- Custom Css -->
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/sign.css" rel="stylesheet">
 
-    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes 
-    <link href="../css/themes/all-themes.css" rel="stylesheet" /> 
-    -->
+    <!-- <link href="../css/themes/all-themes.css" rel="stylesheet" /> -->
 </head>
 <body>
     
@@ -44,12 +45,13 @@
                 <form action="main.html">
                 <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1">
                     <div class="row">
-                        <div class="col-xs-9 col-sm-9 col-md-9" style="padding-left: 0;padding-right: 7.5px">
-                            <a href="#" class="thumbnail">
+                        <div class="col-xs-12 col-sm-12 col-md-12" style="padding-left: 0;padding-right: 7.5px">
+                            <div id="fileuploader"></div>
+                            <!-- <a href="#" class="thumbnail" id="fileuploader">
                                 <img src="../img/signup/add-image.png" alt="">
-                            </a>
+                            </a> -->
                         </div>
-                        <div class="col-xs-3 col-sm-3 col-md-3">
+                        <!-- <div class="col-xs-3 col-sm-3 col-md-3">
                             <div class="media">
                                 <div class="media-left">
                                 <a href="#"><img class="media-object img-responsive" src="../img/signup/pasta.jpg" alt="..."></a>
@@ -70,7 +72,7 @@
                                 <a href="#"><img class="media-object img-responsive" src="../img/signup/add-image.png" alt=""></a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="row">
                         <div class="form-group form-group-ovto">
@@ -354,10 +356,31 @@
 
     <!-- Select Plugin Js -->
     <script src="../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Image Upload Css -->
+    <script src="../plugins/image-upload/image-upload.js"></script>
     
     
     <!-- Custom Js -->
     <script src="../js/custom.js"></script>
+
+    <script>
+        $(document).ready(function()
+        {
+            $("#fileuploader").uploadFile({
+                url:"upload.php",
+                fileName:"myfile",
+                multiple:true,
+                maxFileCount:4,
+                dragDrop:true,
+                sequential:true,
+                sequentialCount:1,
+                showPreview:true,
+                previewHeight: "64px",
+                previewWidth: "64px"
+            });
+        });
+    </script>
 
 </body>
 
