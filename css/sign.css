@@ -205,57 +205,20 @@ textarea.form-control {
     border-radius: 3px;
 }
 
-/* .ajax-upload-dragdrop {
+.blobselect{
+    max-width: 100%;
     border: none;
-    width: auto !important;
-    color: #DADCE3;
-    text-align: center;
-    vertical-align: middle;
-    padding: 0;
 }
-.ajax-file-upload {
-    background: url('../img/signup/add-image.png') no-repeat center center;
-    height: 242px;
-    box-shadow: none;
-    margin: 0;
-    display: block;
-}
-.ajax-file-upload > form > input[type="file"]{
-    cursor: pointer !important;
-    top: -5px !important;
-    left: -10px !important;
-    z-index: 100 !important;
-    opacity: 0 !important;
-    padding: 108px 89px 108px 88px;
-    position: relative !important;
-}
-.ajax-file-upload:hover {
-    background: url('../img/signup/add-image.png') no-repeat center center;
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-}
-.ajax-file-upload-statusbar {
+.blobselect-items{
     border: none;
-    margin-top: 0;
-    width: auto !important;
-    margin-right: 0;
-    margin: 0;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    padding: 0;
+    padding-bottom: 0;
 }
-.ajax-file-upload-filename {
-    width: auto;
-    height: auto;
-    margin: 0;
-    display: none;
+.blobselect-item:first-child{
+    border-top: 1px solid #cacaca
 }
-.ajax-file-upload-error{
-	display:none;				
+.blobselect-item{
+    font-size: 12px;
 }
-.ajax-file-upload-preview {
-    float: left;
-    margin: 0 27px;
-} */
+
+
+
