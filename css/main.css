@@ -1,5 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700|Roboto:300,400,500,700');
 .main{
     margin-top: 70px;
+}
+.bg-gray{
+    background:#e4e4e4; 
+}
+.dropdown-menu .header{
+    border: none;
+    padding: 0;
+    min-width: 300px;
+}
+.dropdown-menu ul.menu li a:hover{
+    background: #ffffff;
+}
+.dropdown-menu ul.menu .menu-info{
+    top: -3px;
+}
+.dropdown-menu ul.menu .menu-info h4{
+    font-size: 16px;
+}
+.dropdown-menu ul.menu .menu-info h4 span.date-mes{
+    font-size: 12px;
+    margin-left: 60px;
+    opacity: .5;
+    color: #191919;
+}
+.dropdown-menu ul.menu .menu-info p{
+    font-size: 12px;
+}
+.dropdown-menu .footer a{
+    border: none;
+    padding: 40px 0 5px;
+}
+a.cover{
+    position: absolute;
+    right: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px;
+}
+.cover span{
+    margin-right: 10px;
+}
+a.res-logo{
+    position: absolute;
+    bottom: 80px;
+    left: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+}
+a.gallery{
+    position: absolute;
+    z-index: 101;
+    right: 0;
+    bottom: 0;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 15px;
+}
+a.gallery span{
+    margin-right: 10px;
 }
 .fb-profile img.fb-image-lg{
     z-index: 0;
@@ -16,6 +87,17 @@
 }
 .fb-profile-text b span span{
     margin: 5px 15px;
+}
+.carousel-control.left, .carousel-control.right{
+    background-image: none;
+}
+.carousel-control {
+    top: 40%;
+    opacity: 1;
+}
+.carousel-control i.material-icons{
+    font-size: 48px;
+    text-shadow: none;
 }
 
 .info-box-2 .icon img{
@@ -135,6 +217,37 @@
     font-size: 18px;
     font-weight: 600;
 }
+.description p{
+    color: #dbdbdb;
+    font-size: 13px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.description h4 span del{
+    color: #191919;
+    opacity: .5;
+    font-size: 13px;
+    font-family: 'Fira Sans', sans-serif;
+    position: relative;
+    top: 6px;
+}
+.description h4 span i.material-icons{
+    color: #dbdbdb;
+    position: relative;
+    top: 6px;
+}
+.btn-share{
+    background: #e8e8e8;
+    margin: 10px 56px 0px 56px;
+    font-size: 14px !important;
+    font-family:  'Fira Sans', sans-serif;
+}
+.btn-share i.material-icons{
+    font-size: 14px !important;
+}
+.single-member > a{
+    color: #191919;
+    text-decoration: none;
+}
 
 .overlay-hover:hover .overlay-effect{
     opacity:1;
@@ -174,7 +287,7 @@
     color: #4E4E4E;
 }
 
-/* Carousel  TEAM Css
+/* Carousel Css
 =========================== */
 .team-items{
         width:100%;
