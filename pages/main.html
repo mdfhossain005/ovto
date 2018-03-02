@@ -55,7 +55,62 @@
                                     <ul class="menu">
                                         <li>
                                             <a href="javascript:void(0);">
-                                                
+                                                <div class="menu-info">
+                                                    <p>
+                                                        <span class="date-not pull-left">09.1.2018</span>
+                                                        <span class="pull-right p-not">Lorem ipsum dolor sit,<br> amet bla bla</span>
+                                                    </p>
+                                                </div>     
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <div class="menu-info">
+                                                    <p>
+                                                        <span class="date-not pull-left">09.1.2018</span>
+                                                        <span class="pull-right p-not">Lorem ipsum dolor sit,<br> amet bla bla</span>
+                                                    </p>
+                                                </div>     
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <div class="menu-info">
+                                                    <p>
+                                                        <span class="date-not pull-left">09.1.2018</span>
+                                                        <span class="pull-right p-not">Lorem ipsum dolor sit,<br> amet bla bla</span>
+                                                    </p>
+                                                </div>     
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <div class="menu-info">
+                                                    <p>
+                                                        <span class="date-not pull-left">09.1.2018</span>
+                                                        <span class="pull-right p-not">Lorem ipsum dolor sit,<br> amet bla bla</span>
+                                                    </p>
+                                                </div>     
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <div class="menu-info">
+                                                    <p>
+                                                        <span class="date-not pull-left">09.1.2018</span>
+                                                        <span class="pull-right p-not">Lorem ipsum dolor sit,<br> amet bla bla</span>
+                                                    </p>
+                                                </div>     
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <div class="menu-info">
+                                                    <p>
+                                                        <span class="date-not pull-left">09.1.2018</span>
+                                                        <span class="pull-right p-not">Lorem ipsum dolor sit,<br> amet bla bla</span>
+                                                    </p>
+                                                </div>     
                                             </a>
                                         </li>
                                     </ul>
@@ -159,7 +214,7 @@
                         <!-- #END# Tasks -->
                         <li>
                             <a href="javascript:void(0);" style="margin: 5px 20px 5px 20px;">
-                                <img class="img-responsive" src="../img/main/photo-edit.png" alt="" width="42">
+                                <img class="img-responsive" src="../img/main/photo-edit.png" alt="" data-toggle="modal" data-target="#ppupload" width="42">
                             </a>
                         </li>
                         <!-- #END# Tasks -->
@@ -208,16 +263,15 @@
                 <div class="row" style="margin-bottom: 25px;">
                     <div class="col-sm-7 col-md-7" style="padding-left: 0;">
                         <div class="fb-profile">
-                            <a href="" class="cover">
+                            <a href="" class="cover" data-toggle="modal" data-target="#coverpic">
                                 <div class="text-right">
                                     <span>Edit cover pic </span>
                                     <img class="img-responsive pull-right" src="../img/main/edit.svg" alt="" width="24"></span>
                                 </div>
                             </a>
                             <img align="left" class="fb-image-lg img-responsive" src="../img/main/cover-photo.png" alt=""/>
-                            
-                            <img align="left" class="fb-image-profile img-responsive" src="../img/main/profile-photo.png" alt=""/>
-                            <a href="" class="res-logo">
+                            <img align="left" class="fb-image-profile img-responsive" src="../img/main/profile-photo.png" alt="" />
+                            <a href="" class="res-logo" data-toggle="modal" data-target="#reslogo">
                                 <div class="text-left">
                                     <span>Edit restaurent <br>logo </span>
                                     <img class="img-responsive pull-right" src="../img/main/edit.svg" alt="" width="16"></span>
@@ -241,7 +295,7 @@
                                 <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                             </ol> -->
 
-                            <a href="" class="gallery">
+                            <a href="" class="gallery" data-toggle="modal" data-target="#addgallery">
                                 <div class="text-right">
                                     <span>Add your gallery </span>
                                     <img class="img-responsive pull-right" src="../img/main/add-gallery.svg" alt="" width="32"></span>
@@ -422,6 +476,84 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="ppupload" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="text-center">UPLOAD PROFILE PICTURE</h4>                    
+                    </div>
+                    <div class="modal-body" style="margin:0 60px;">
+                        <div class="form-group">                      
+                            <input type="file" class="form-control" name="">
+                        </div>
+                    </div>    
+                    <div class="modal-footer" style="margin:0 150px;">
+                        <button type="button" class="btn btn-ovto btn-block waves-effect" data-dismiss="modal">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="coverpic" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="text-center">UPLOAD COVER PICTURE</h4>                    
+                    </div>
+                    <div class="modal-body" style="margin:0 60px;">
+                        <div class="form-group">                      
+                            <input type="file" class="form-control" name="">
+                        </div>
+                    </div>    
+                    <div class="modal-footer" style="margin:0 150px;">
+                        <button type="button" class="btn btn-ovto btn-block waves-effect" data-dismiss="modal">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="reslogo" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="text-center">UPLOAD RESTAURANT LOGO</h4>                    
+                    </div>
+                    <div class="modal-body" style="margin:0 60px;">
+                        <div class="form-group">                      
+                            <input type="file" class="form-control" name="">
+                        </div>
+                    </div>    
+                    <div class="modal-footer" style="margin:0 150px;">
+                        <button type="button" class="btn btn-ovto btn-block waves-effect" data-dismiss="modal">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="addgallery" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="text-center">UPLOAD COVER PICTURE</h4>                    
+                    </div>
+                    <div class="modal-body" style="margin:0 60px;">
+                        <div class="form-group">                      
+                            <input type="file" class="form-control" name="">
+                        </div>
+                        <div class="form-group">                      
+                            <input type="file" class="form-control" name="">
+                        </div>
+                        <div class="form-group">                      
+                            <input type="file" class="form-control" name="">
+                        </div>
+                    </div>    
+                    <div class="modal-footer" style="margin:0 150px;">
+                        <button type="button" class="btn btn-ovto btn-block waves-effect" data-dismiss="modal">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
 
 
     </section>

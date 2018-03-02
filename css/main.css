@@ -32,6 +32,13 @@
     border: none;
     padding: 40px 0 5px;
 }
+.date-not{
+    color: #46b692;
+}
+.p-not{
+    position: relative;
+    left: 100px;
+}
 a.cover{
     position: absolute;
     right: 20px;
@@ -58,7 +65,7 @@ a.res-logo{
 }
 a.gallery{
     position: absolute;
-    z-index: 101;
+    z-index: 11;
     right: 0;
     bottom: 0;
     text-decoration: none;
@@ -71,6 +78,12 @@ a.gallery{
 }
 a.gallery span{
     margin-right: 10px;
+}
+input[type="file"]{
+    border: 1px solid #46b692 !important;
+    padding: 10px !important;
+    height: 45px;
+    border-radius: 3px !important;
 }
 .fb-profile img.fb-image-lg{
     z-index: 0;
