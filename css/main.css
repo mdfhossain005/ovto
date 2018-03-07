@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700|Roboto:300,400,500,700');
+body{
+    background:#f6f6f6;
+}
 .main{
     margin-top: 70px;
+}
+.navbar .navbar-brand{
+    border: none;
 }
 .bg-gray{
     background:#e4e4e4; 
@@ -115,27 +121,27 @@ input[type="file"]{
 
 .info-box-2 .icon img{
     margin: 25px 0px;
-  }
-  .info-box-2.hover-zoom-effect .icon {
+}
+.info-box-2.hover-zoom-effect .icon {
     overflow: hidden; 
-  }
-  .info-box-2.hover-zoom-effect .icon img {
+}
+.info-box-2.hover-zoom-effect .icon img {
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; 
-  }
-  
-  .info-box-2.hover-zoom-effect:hover .icon img {
+}
+
+.info-box-2.hover-zoom-effect:hover .icon img {
     opacity: 0.4;
     -moz-transform: rotate(-32deg) scale(1.4);
     -ms-transform: rotate(-32deg) scale(1.4);
     -o-transform: rotate(-32deg) scale(1.4);
     -webkit-transform: rotate(-32deg) scale(1.4);
     transform: rotate(-32deg) scale(1.4); 
-  }
-  
-  .info-box-2.hover-expand-effect:after {
+}
+
+.info-box-2.hover-expand-effect:after {
     background-color: rgba(0, 0, 0, 0.05);
     content: ".";
     position: absolute;
@@ -148,12 +154,12 @@ input[type="file"]{
     -o-transition: all 0.95s;
     -webkit-transition: all 0.95s;
     transition: all 0.95s; 
-  }
-  
-  .info-box-2.hover-expand-effect:hover:after {
+}
+
+.info-box-2.hover-expand-effect:hover:after {
     width: 100%; 
-  }
-  .info-box-2 .content .text {
+}
+.info-box-2 .content .text {
     font-size: 18px;
     color: #fff;
     font-weight: 500;
@@ -167,6 +173,20 @@ input[type="file"]{
     box-shadow: none;
     cursor: pointer;
     border-radius: 3px;
+}
+.his-content{
+    padding: 7px 10px;
+}
+.his-content .text{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 11px
+}
+.his-content .number{
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
 }
 .bg-violet{
     background: -webkit-linear-gradient(20deg, rgb(39, 29, 93) 0%, rgb(29, 130, 182) 100%);
@@ -195,6 +215,69 @@ input[type="file"]{
     background: -ms-linear-gradient(20deg, rgb(0, 159, 197) 0%, rgb(60, 236, 176) 100%);
     background: -moz-linear-gradient(20deg, rgb(0, 159, 197) 0%, rgb(60, 236, 176) 100%);
     background: linear-gradient(70deg, rgb(0, 159, 197) 0%, rgb(60, 236, 176) 100%);
+}
+.bg-sky{
+    background: -webkit-linear-gradient(49deg, rgb(121, 86, 236) 0%, rgb(47, 185, 248) 100%);
+    background: -o-linear-gradient(49deg, rgb(121, 86, 236) 0%, rgb(47, 185, 248) 100%);
+    background: -ms-linear-gradient(49deg, rgb(121, 86, 236) 0%, rgb(47, 185, 248) 100%);
+    background: -moz-linear-gradient(49deg, rgb(121, 86, 236) 0%, rgb(47, 185, 248) 100%);
+    background: linear-gradient(49deg, rgb(121, 86, 236) 0%, rgb(47, 185, 248) 100%);
+    height: 120px;
+    padding: 10px 0 50px 0;
+    border-radius: 5px;
+}
+.bg-yellow{
+    background: -webkit-linear-gradient(49deg, rgb(255,142,100) 0%, rgb(255,230,65) 100%);
+    background: -o-linear-gradient(49deg, rgb(255,142,100) 0%, rgb(255,230,65) 100%);
+    background: -ms-linear-gradient(49deg, rgb(255,142,100) 0%, rgb(255,230,65) 100%);
+    background: -moz-linear-gradient(49deg, rgb(255,142,100) 0%, rgb(255,230,65) 100%);
+    background: linear-gradient(49deg, rgb(255,142,100) 0%, rgb(255,230,65) 100%);
+    height: 120px;
+    padding: 10px 0 50px 0;
+    border-radius: 5px;
+}
+.bg-green{
+    background: -webkit-linear-gradient(-129deg, rgb(62,236,177) 0%, rgb(116,225,68) 100%);
+    background: -o-linear-gradient(-129deg, rgb(62,236,177) 0%, rgb(116,225,68) 100%);
+    background: -ms-linear-gradient(-129deg, rgb(62,236,177) 0%, rgb(116,225,68) 100%);
+    background: -moz-linear-gradient(-129deg, rgb(62,236,177) 0%, rgb(116,225,68) 100%);
+    background: linear-gradient(-129deg, rgb(62,236,177) 0%, rgb(116,225,68) 100%);
+    height: 120px;
+    padding: 10px 0 50px 0;
+    border-radius: 5px;
+}
+.bg-mate{
+    background: -webkit-linear-gradient(49deg, rgb(52,32,112) 0%, rgb(234,161,174) 100%);
+    background: -o-linear-gradient(49deg, rgb(52,32,112) 0%, rgb(234,161,174) 100%);
+    background: -ms-linear-gradient(49deg, rgb(52,32,112) 0%, rgb(234,161,174) 100%);
+    background: -moz-linear-gradient(49deg, rgb(52,32,112) 0%, rgb(234,161,174) 100%);
+    background: linear-gradient(49deg, rgb(52,32,112) 0%, rgb(234,161,174) 100%);
+    height: 120px;
+    padding: 10px 0 50px 0;
+    border-radius: 5px;
+}
+.glyphicon{
+    line-height: inherit;
+    color: #191919;
+}
+.list-top ul li, .list-bottom ul li{
+    margin-left: 20px;
+    padding: 10px 0;
+}
+.list-top ul li img, .list-bottom ul li img{
+    margin-right: 15px;
+}
+.list-top ul li a, .list-bottom ul li a{
+    text-decoration: none;
+}
+.list-top ul li span, .list-bottom ul li span{
+    color: #191919;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+}
+.list-bottom{
+    margin-top: 300px;
 }
 
 
@@ -298,6 +381,39 @@ input[type="file"]{
 .overlay-effect ul li a {
     text-decoration: none;
     color: #4E4E4E;
+}
+.sidebar {
+    background: #fff;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
+}
+.card {
+    border-radius: 5px;
+    box-shadow: none;
+}
+.card .body {
+    padding: 15px;
+}
+.nav-tabs {
+    border-bottom: none;
+}
+.nav-tabs > li > a{
+    color: #191919 !important;
+    font-weight: 500;
+}
+.nav-tabs li.active a{
+    background: #46b692;
+    color: #fff !important;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.nav-tabs > li > a:before{
+    border: none;;
+}
+.nav-tabs li.active a:hover, .nav-tabs li.active a:active, .nav-tabs li.active a:focus {
+    background-color: #46b692 !important;
 }
 
 /* Carousel Css
