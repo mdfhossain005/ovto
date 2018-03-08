@@ -20,9 +20,7 @@
     <!-- Animation Css -->
     <link href="../plugins/animate-css/animate.css" rel="stylesheet" />
 
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="../plugins/owl-carousel/css/owl.carousel.css"/>
-    <link rel="stylesheet" href="../plugins/owl-carousel/css/owl.theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
 
     <!-- Custom Css -->
     <link href="../css/style.css" rel="stylesheet">
@@ -32,13 +30,13 @@
 </head>
 <body>
 
-    <section style="background:#f3f6f6">
+    <section>
         <!-- Top Bar -->
         <nav class="navbar">
             <div class="container" style="padding:0">
                 <div class="navbar-header">
                     <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
-                    <a class="navbar-brand" href="summery.html" style="border: 1px solid #46b692;"><img class="img-responsive pull-left" src="../img/main/menu-line.svg" width="24"> <span>DASHBOARD</span></a>
+                    <a class="navbar-brand" href=""><img class="img-responsive pull-left" src="../img/logo.png" width="96"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -227,6 +225,69 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li class="active">
+                        <a href="summery.html" class="menu-toggle">
+                            <span>SUMMERY</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="profit_history.html">
+                                    <i class="glyphicon glyphicon-triangle-right"></i>
+                                    <span>PROFIT HISTORY</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="revenue_history.html">
+                                    <i class="glyphicon glyphicon-triangle-right"></i>
+                                    <span>REVENUE HISTORY</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="expense_history.html">
+                                    <i class="glyphicon glyphicon-triangle-right"></i>
+                                    <span>EXPENSE HISTORY</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-triangle-right"></i>
+                                    <span>ORDER HISTORY</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>ORDER ANALYTICS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>STAFF ROLE</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>ADD EXPENSES</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>MANAGE DISCOUNT</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- #Menu -->
+        </aside>
+        <!-- #END# Left Sidebar -->
         
         <!-- Right Sidebar -->
         <aside id="rightsidebar" class="right-sidebar">
@@ -273,221 +334,82 @@
                 
         </aside>
 
-        <div class="main">
-            <div class="container">
-                <div class="row" style="margin-bottom: 25px;">
-                    <div class="col-sm-7 col-md-7" style="padding-left: 0;">
-                        <div class="fb-profile">
-                            <a href="" class="cover" data-toggle="modal" data-target="#coverpic">
-                                <div class="text-right">
-                                    <span>Edit cover pic </span>
-                                    <img class="img-responsive pull-right" src="../img/main/edit.svg" alt="" width="24"></span>
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row" style="margin-top:20px;">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="info-box-2 bg-mate hover-zoom-effect">
+                            <div class="his-content">
+                                <div class="text">Daily Orders</div>
+                                <div class="number">589.48 BDT</div>
+                                <div class="info-icon">
+                                    <img src="../img/main/calendar.svg" alt="" width="16" class="img-responsive pull-left">
+                                    <span>1st Feb</span>
                                 </div>
-                            </a>
-                            <img align="left" class="fb-image-lg img-responsive" src="../img/main/cover-photo.png" alt=""/>
-                            <img align="left" class="fb-image-profile img-responsive" src="../img/main/profile-photo.png" alt="" />
-                            <a href="" class="res-logo" data-toggle="modal" data-target="#reslogo">
-                                <div class="text-left">
-                                    <span>Edit restaurent <br>logo </span>
-                                    <img class="img-responsive pull-right" src="../img/main/edit.svg" alt="" width="16"></span>
-                                </div>
-                            </a>
-                            <div class="fb-profile-text">
-                                <h4>FRIEND'S KITCHEN</h4>
-                                <b>
-                                    <span><img class="img-responsive pull-left" src="../img/main/score.svg" width="24"><span class="pull-left">Scores: 10016</span></span> 
-                                    <span><img class="img-responsive pull-left" src="../img/main/status.svg" width="24"><span class="pull-left">Status: Sliver</span></span>
-                                </b>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-5 col-md-5" >
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="margin-top:10px;">
-                            <!-- Indicators -->
-                            <!-- <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            </ol> -->
-
-                            <a href="" class="gallery" data-toggle="modal" data-target="#addgallery">
-                                <div class="text-right">
-                                    <span>Add your gallery </span>
-                                    <img class="img-responsive pull-right" src="../img/main/add-gallery.svg" alt="" width="32"></span>
-                                </div>
-                            </a>
-                            
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <img class="img-responsive" src="../img/main/Inside-Restaurant.jpg" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="img-responsive" src="../img/main/Inside-Restaurant.jpg" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="img-responsive" src="../img/main/Inside-Restaurant.jpg" alt="">
-                                </div>
-                            </div>
-                            
-                            <!-- Controls -->
-                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                                <i class='material-icons'>chevron_left</i>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                                <i class='material-icons'>chevron_right</i>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" style="margin-bottom:50px;">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-left:0;">
-                        <div class="info-box-2 bg-violet hover-zoom-effect">
-                            <div class="icon">
-                                <img src="../img/main/menu.svg" alt="" width="32">
-                            </div>
-                            <div class="content">
-                                <div class="text">Category</div>
-                                <div class="number">15</div>
                             </div>
                         </div>
 
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box-2 bg-blue hover-zoom-effect">
-                            <div class="icon">
-                                <img src="../img/main/menu-add.svg" alt="" width="32">
-                            </div>
-                            <div class="content">
-                                <div class="text">Subcategory</div>
-                                <div class="number">15</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box-2 bg-light-blue hover-zoom-effect">
-                            <div class="icon">
-                                    <img src="../img/main/list-item.svg" alt="" width="32">
-                            </div>
-                            <div class="content">
-                                <div class="text">Total items</div>
-                                <div class="number">15</div>
+                        <div class="info-box-2 bg-mate hover-zoom-effect">
+                            <div class="his-content">
+                                <div class="text">Weekly Orders</div>
+                                <div class="number">2836.48 BDT</div>
+                                <div class="info-icon">
+                                    <img src="../img/main/calendar.svg" alt="" width="16" class="img-responsive pull-left">
+                                    <span>29 Jan - 4th Feb</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box-2 bg-cyan hover-zoom-effect">
-                            <div class="icon">
-                                    <img src="../img/main/list-available.svg" alt="" width="32">
+                        <div class="info-box-2 bg-mate hover-zoom-effect">
+                            <div class="his-content">
+                                <div class="text">Monthly Orders</div>
+                                <div class="number">589.48 BDT</div>
+                                <div class="info-icon">
+                                    <img src="../img/main/calendar.svg" alt="" width="16" class="img-responsive pull-left">
+                                    <span>February</span>
+                                </div>
                             </div>
-                            <div class="content">
-                                <div class="text">Available Items</div>
-                                <div class="number">15</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="info-box-2 bg-mate hover-zoom-effect">
+                            <div class="his-content">
+                                <div class="text">Yearly Orders</div>
+                                <div class="number">19863.48 BDT</div>
+                                <div class="info-icon">
+                                    <img src="../img/main/calendar.svg" alt="" width="16" class="img-responsive pull-left">
+                                    <span>2018</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="row">
-
-                    <div id="owl-demo" class="owl-carousel owl-theme team-items">
-                        <div class="item">
-                            <div class="overlay-hover">
-                                <img src="../img/main/01burgers.png" alt="" class="img-responsive">
-                            </div>
-                            <div class="single-member">
-                                <div class="description">
-                                    <h3>Nachos</h3>
-                                    <h5>MAXICAN NACHOS</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-                                    <p>Category: Lorem</p>
-                                    <p>Subcategory: Ipsum</p>
-                                    <p>Available: 10:20 AM - 4:00 PM</p>
-                                    <h4 class="text-center">
-                                        <span class="pull-left"><del>BDT 360</del></span> 
-                                        <span class="pull-right">BDT 260  <i class="material-icons">info_outline</i></span> 
-                                       
-                                    </h4>
-                                    <button class="btn btn-default btn-sm btn-share"><i class="material-icons">share</i> Share now</button>
-                                </div>
-                            </div>
-                        </div>  <!-- item wrapper end -->
-                        <div class="item">
-                            <div class="overlay-hover">
-                                <img src="../img/main/02nachos.png" alt="" class="img-responsive">
-                            </div>
-                            <div class="single-member">
-                                <div class="description">
-                                    <h3>Nachos</h3>
-                                    <h5>MAXICAN NACHOS</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-                                    <p>Category: Lorem</p>
-                                    <p>Subcategory: Ipsum</p>
-                                    <p>Available: 10:20 AM - 4:00 PM</p>
-                                    <h4 class="text-center">
-                                        <span class="pull-left"><del>BDT 360</del></span> 
-                                        <span class="pull-right">BDT 260  <i class="material-icons">info_outline</i></span> 
-                                       
-                                    </h4>
-                                    <button class="btn btn-default btn-sm btn-share"><i class="material-icons">share</i> Share now</button>
-                                </div>
-                            </div>
-                        </div>  <!-- item wrapper end -->
-                        <div class="item">
-                            <div class="overlay-hover">
-                                <img src="../img/main/03food.png" alt="" class="img-responsive">
-                            </div>
-                            <div class="single-member">
-                                <div class="description">
-                                    <h3>Nachos</h3>
-                                    <h5>MAXICAN NACHOS</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-                                    <p>Category: Lorem</p>
-                                    <p>Subcategory: Ipsum</p>
-                                    <p>Available: 10:20 AM - 4:00 PM</p>
-                                    <h4 class="text-center">
-                                        <span class="pull-left"><del>BDT 360</del></span> 
-                                        <span class="pull-right">BDT 260  <i class="material-icons">info_outline</i></span> 
-                                       
-                                    </h4>
-                                    <button class="btn btn-default btn-sm btn-share"><i class="material-icons">share</i> Share now</button>
-                                </div>
-                            </div>
-                        </div>  <!-- item wrapper end -->
-                        <div class="item">
-                            <div class="overlay-hover">
-                                <img src="../img/main/01burgers.png" alt="" class="img-responsive">
-                            </div>
-                            <div class="single-member">
-                                <div class="description">
-                                    <h3>Nachos</h3>
-                                    <h5>MAXICAN NACHOS</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-                                    <p>Category: Lorem</p>
-                                    <p>Subcategory: Ipsum</p>
-                                    <p>Available: 10:20 AM - 4:00 PM</p>
-                                    <h4 class="text-center">
-                                        <span class="pull-left"><del>BDT 360</del></span> 
-                                        <span class="pull-right">BDT 260  <i class="material-icons">info_outline</i></span> 
-                                       
-                                    </h4>
-                                    <button class="btn btn-default btn-sm btn-share"><i class="material-icons">share</i> Share now</button>
-                                </div>
-                            </div>
-                        </div>  <!-- item wrapper end -->
-                        <div class="item last-item">
-                            <div class="single-member">
-                                <a href="#" >
-                                    <div class="description text-center">
-                                        <h1>+</h1>
-                                        <h5>ADD MORE FOOD</h5>
+                    <div class="col-md-12">
+                            <div class="card">
+                                <div class="body">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs pull-right" role="tablist">
+                                        <li role="presentation" class="active"><a href="#or-month-or" data-toggle="tab">Monthly</a></li>
+                                        <li role="presentation"><a href="#ex-year-or" data-toggle="tab">Yearly</a></li>
+                                    </ul>
+        
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane fade in active" id="or-month-or">
+                                            <canvas id="line-chart-order-m" height="80"></canvas>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane fade" id="ex-year-or">
+                                            <canvas id="line-chart-order-y" height="80"></canvas>
+                                        </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
-                        </div>  <!-- item wrapper end -->
-                    </div>
-
+                        </div>
                 </div>
             </div>
         </div>
@@ -510,66 +432,6 @@
             </div>
         </div>
 
-        <div class="modal fade" id="coverpic" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="text-center">UPLOAD COVER PICTURE</h4>                    
-                    </div>
-                    <div class="modal-body" style="margin:0 60px;">
-                        <div class="form-group">                      
-                            <input type="file" class="form-control" name="">
-                        </div>
-                    </div>    
-                    <div class="modal-footer" style="margin:0 150px;">
-                        <button type="button" class="btn btn-ovto btn-block waves-effect" data-dismiss="modal">SUBMIT</button>
-                    </div>
-                </div>
-            </div>
-        </div> 
-
-        <div class="modal fade" id="reslogo" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="text-center">UPLOAD RESTAURANT LOGO</h4>                    
-                    </div>
-                    <div class="modal-body" style="margin:0 60px;">
-                        <div class="form-group">                      
-                            <input type="file" class="form-control" name="">
-                        </div>
-                    </div>    
-                    <div class="modal-footer" style="margin:0 150px;">
-                        <button type="button" class="btn btn-ovto btn-block waves-effect" data-dismiss="modal">SUBMIT</button>
-                    </div>
-                </div>
-            </div>
-        </div> 
-
-        <div class="modal fade" id="addgallery" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="text-center">UPLOAD COVER PICTURE</h4>                    
-                    </div>
-                    <div class="modal-body" style="margin:0 60px;">
-                        <div class="form-group">                      
-                            <input type="file" class="form-control" name="">
-                        </div>
-                        <div class="form-group">                      
-                            <input type="file" class="form-control" name="">
-                        </div>
-                        <div class="form-group">                      
-                            <input type="file" class="form-control" name="">
-                        </div>
-                    </div>    
-                    <div class="modal-footer" style="margin:0 150px;">
-                        <button type="button" class="btn btn-ovto btn-block waves-effect" data-dismiss="modal">SUBMIT</button>
-                    </div>
-                </div>
-            </div>
-        </div> 
-
 
     </section>
 
@@ -585,8 +447,9 @@
     <!-- Slimscroll Plugin Js -->
     <script src="../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
-    <!-- Owl Carousel -->
-    <script src="../plugins/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="../plugins/chartjs/chart.min.js"></script>
+    <script src="../js/pages/order_history/line-chart-order.js"></script>
+
     
     <!-- Custom Js -->
     <script src="../js/custom.js"></script>
@@ -594,38 +457,6 @@
     <!-- Demo Js -->
     <script src="../js/demo.js"></script>
 
-    <script>
-        $("#owl-demo").owlCarousel({
-  
-            navigation : true, // Show next and prev buttons
-            // navigationText: ["prev","next"], 
-            navigationText: [
-                "<i class='material-icons'>chevron_left</i>",
-                "<i class='material-icons'>chevron_right</i>"
-                ],
-            slideSpeed : 300,
-            paginationSpeed : 400,
-            autoPlay: false,  
-            items : 4,
-            itemsDesktop:[1199,4],  
-            itemsDesktopSmall:[979,3],  //As above.
-            itemsTablet:[768,3],    //As above.
-            itemsMobile:[479,1],    //As above
-            goToFirst: true,    //Slide to first item if autoPlay reach end
-            goToFirstSpeed:1000 ,
-            pagination: false
-        });
-
-
-        // Custom Navigation Events
-        $(".next").click(function(){
-        owl.trigger('owl.next');
-        })
-        $(".prev").click(function(){
-        owl.trigger('owl.prev');
-        })
-        
-    </script>
 
 </body>
 
