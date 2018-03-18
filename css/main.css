@@ -613,3 +613,106 @@ input[type="file"]{
     filter: Alpha(Opacity=50);
     opacity: 0.5;
 }
+
+/* Payment Css
+=========================== */
+.payment-left, .payment-right, .admin-setLeft, .admin-setRight, .other-set{
+    margin-top: 30px;
+}
+.payment-left h4{
+    margin-bottom: 30px;
+}
+.payment-left table{
+    margin-top: 20px;
+}
+.payment-left table thead tr{
+    background: #00b16a;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;  
+}
+.payment-left .table-bordered > thead > tr > td{
+    border-bottom-width: 0;
+    border:none;
+    padding: 20px 0;
+}
+.payment-left table tbody tr{
+    background: #fff;
+}
+.payment-left table tbody tr td{
+    padding: 20px 0;
+    font-weight: 500;
+    font-size: 14px;
+}
+.payment-left .table-bordered, .payment-left .table-bordered tbody tr td{
+    border: 1px solid #00b16a;
+}
+.payment-left form{
+    margin: 30px 100px;
+}
+.payment-left .form-group input{
+    height: 60px;
+    border: 2px solid #f89406;
+    background: #f6f6f6;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+.payment-left .form-group a.btn-warning{
+    background: #f89406 !important;
+    height: 60px;
+    line-height: 48px;
+    font-weight: 500;
+    font-size: 18px !important;
+}
+.payment-left ul li{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #191919;
+}
+.payment-right ul{
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.payment-right > img{
+    margin-top: 40px;
+}
+
+.admin-setLeft h4, .admin-setRight h4, .other-set h4{
+    color: #46b692;
+    font-size: 16px;
+    font-weight: 500;
+}
+.admin-setLeft .form-group, .admin-setRight .form-group, .other-set .form-group{
+    margin-bottom: 15px;
+}
+.admin-setLeft .form-group label, .admin-setRight .form-group label, .other-set .form-group label{
+    color: #191919;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+}
+.admin-setLeft .form-group .form-control, .admin-setRight .form-group .form-control, .other-set .form-group .form-control{
+    border: 1px solid #dbdbdb;
+    height: 48px;
+    padding: 6px 14px !important;
+    background: transparent;
+    color: #191919;
+}
+
+.admin-setLeft .input-group .input-group-addon, .admin-setRight .input-group .input-group-addon{
+    border: 1px solid #dbdbdb;
+    border-right: none;
+    padding-left: 12px;
+}
+.open-time, .close-time{
+    border-left: none !important;
+}
+.admin-setRight .btn-main{
+    margin-top: 175px;
+    padding: 0 20px 0 200px;
+}
+.other-set .btn-other{
+    margin-top: 100px;
+    padding: 0 50px 0 200px;
+}
