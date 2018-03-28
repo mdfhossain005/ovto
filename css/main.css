@@ -717,7 +717,7 @@ input[type="file"]{
     padding: 0 50px 0 200px;
 }
 
-.content .order-analytics{
+.content .order-analytics, .content .manage-discount{
     margin-top: 30px;
 }
 .order-analytics table thead tr td,
@@ -750,4 +750,22 @@ input[type="file"]{
 .order-analytics table tbody tr td:nth-child(9){
     background: #78b4be;
     width: 120px;
+}
+
+.table-manage{
+    background: #fff;
+    margin-bottom: 0;
+}
+.table-manage tbody tr td{
+    color: #191919;
+    font-weight: 500;
+    font-size: 13px;
+}
+.pagination > li > a {
+    border: none;
+    font-weight: bold;
+    color: #555;
+    margin: 0 5px;
+    border-radius: 3px !important;
+    background: #e4e4e4;
 }
