@@ -20,6 +20,10 @@
     <!-- Animation Css -->
     <link href="../plugins/animate-css/animate.css" rel="stylesheet" />
 
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="../plugins/owl-carousel/css/owl.carousel.css"/>
+    <link rel="stylesheet" href="../plugins/owl-carousel/css/owl.theme.css"/>
+
     <!-- Custom Css -->
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
@@ -28,7 +32,7 @@
 </head>
 <body>
 
-    <section>
+    <section style="background:#f3f6f6">
         <!-- Top Bar -->
         <nav class="navbar">
             <div class="container" style="padding:0">
@@ -223,69 +227,6 @@
                 </div>
             </div>
         </nav>
-
-        <!-- Left Sidebar -->
-        <aside id="leftsidebar" class="sidebar">
-            
-            <!-- Menu -->
-            <div class="menu">
-                <ul class="list">
-                    <li class="active">
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <span>SUMMERY</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="profit_history.html">
-                                    <i class="glyphicon glyphicon-triangle-right"></i>
-                                    <span>PROFIT HISTORY</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="revenue_history.html">
-                                    <i class="glyphicon glyphicon-triangle-right"></i>
-                                    <span>REVENUE HISTORY</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="expense_history.html">
-                                    <i class="glyphicon glyphicon-triangle-right"></i>
-                                    <span>EXPENSE HISTORY</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="order_history.html">
-                                    <i class="glyphicon glyphicon-triangle-right"></i>
-                                    <span>ORDER HISTORY</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span>ORDER ANALYTICS</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span>STAFF ROLE</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span>ADD EXPENSES</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span>MANAGE DISCOUNT</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- #Menu -->
-        </aside>
-        <!-- #END# Left Sidebar -->
         
         <!-- Right Sidebar -->
         <aside id="rightsidebar" class="right-sidebar">
@@ -311,7 +252,7 @@
                         </a>
                     </li>
                     <li >
-                        <a href="payment.html">
+                        <a href="">
                             <img src="../img/main/payment.svg" alt="" class="img-responsive pull-left clearfix" width="24">
                             <span class="clearfix">Payment</span>
                         </a>
@@ -332,92 +273,101 @@
                 
         </aside>
 
-        <section class="content">
-            <div class="container-fluid">
-                <div class="row" style="margin-top:20px;">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box-2 bg-violet-blue hover-zoom-effect">
-                            <div class="his-content">
-                                <div class="text text-center">Current Month Expense</div>
-                                <div class="number text-center">15000 BDT</div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box-2 bg-violet-lviolet hover-zoom-effect">
-                            <div class="his-content text-center">
-                                <div class="text">Previous Month Expense</div>
-                                <div class="number">15000 BDT</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box-2 bg-blue-lblue hover-zoom-effect">
-                            <div class="his-content text-center">
-                                <div class="text">Current Year Expense</div>
-                                <div class="number">15000 BDT</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box-2 bg-dblue-lblue hover-zoom-effect">
-                            <div class="his-content text-center">
-                                <div class="text">Previous Year Expense</div>
-                                <div class="number">19863.48 BDT</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="main" style="margin-top:100px;">
+            <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <ul class="list-inline">
-                            <li>
-                                <h4>Restuarent Rent</h4>
-                                <h5>15000 BDT</h5>
-                                <a href=""> EDIT & ADD</a>
-                            </li>
-                            <li>
-                                <h4>Water Bill</h4>
-                                <h5>15000 BDT</h5>
-                                <a href=""> EDIT & ADD</a>
-                            </li>
-                            <li>
-                                <h4>Internet Bill</h4>
-                                <h5>15000 BDT</h5>
-                                <a href=""> EDIT & ADD</a>
-                            </li>
-                            <li>
-                                
-                            </li>
-                            <li>
-                                
-                            </li>
+                            <li><input type="checkbox"></li>
+                            <li><img src="" alt=""></li>
+                            <li><img src="" alt=""></li>
                         </ul>
-                        <ul class="list-inline">
-                            <li>
-                                <h4>Staff Salary</h4>
-                                <h5>15000 BDT</h5>
-                                <a href=""> EDIT & ADD</a>
-                            </li>
-                            <li>
-                                <h4>Gas Bill</h4>
-                                <h5>15000 BDT</h5>
-                                <a href=""> EDIT & ADD</a>
-                            </li>
-                            <li>
-                                
-                            </li>
-                            <li>
-                                <h4>Ovto Charge</h4>
-                                <h5>15000 BDT</h5>
-                                <a href=""> EDIT & ADD</a>
-                            </li>
-                            <li>
-                                <img src="" alt="">
-                                <h4>Add More Expense Item</h4>
-                            </li>
-                        </ul>
+                    </div>    
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table table-responsive">
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><h5>LOREM IPSUM</h5></td>
+                                    <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></td>
+                                    <td><b>2:52 PM</b></td>
+                                    <td><b>JAN 26, 2018</b></td>
+                                    <td><img src="" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><h5>LOREM IPSUM</h5></td>
+                                    <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></td>
+                                    <td><b>2:52 PM</b></td>
+                                    <td><b>JAN 26, 2018</b></td>
+                                    <td><img src="" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><h5>LOREM IPSUM</h5></td>
+                                    <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></td>
+                                    <td><b>2:52 PM</b></td>
+                                    <td><b>JAN 26, 2018</b></td>
+                                    <td><img src="" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><h5>LOREM IPSUM</h5></td>
+                                    <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></td>
+                                    <td><b>2:52 PM</b></td>
+                                    <td><b>JAN 26, 2018</b></td>
+                                    <td><img src="" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><h5>LOREM IPSUM</h5></td>
+                                    <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></td>
+                                    <td><b>2:52 PM</b></td>
+                                    <td><b>JAN 26, 2018</b></td>
+                                    <td><img src="" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><h5>LOREM IPSUM</h5></td>
+                                    <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></td>
+                                    <td><b>2:52 PM</b></td>
+                                    <td><b>JAN 26, 2018</b></td>
+                                    <td><img src="" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><h5>LOREM IPSUM</h5></td>
+                                    <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></td>
+                                    <td><b>2:52 PM</b></td>
+                                    <td><b>JAN 26, 2018</b></td>
+                                    <td><img src="" alt=""></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">PREVIOUS</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">...</a></li>
+                                <li><a href="#">11</a></li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">NEXT</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -442,6 +392,7 @@
         </div>
 
 
+
     </section>
 
     <!-- Jquery Core Js -->
@@ -456,6 +407,8 @@
     <!-- Slimscroll Plugin Js -->
     <script src="../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
+    <!-- Owl Carousel -->
+    <script src="../plugins/owl-carousel/js/owl.carousel.min.js"></script>
     
     <!-- Custom Js -->
     <script src="../js/custom.js"></script>
@@ -463,6 +416,7 @@
     <!-- Demo Js -->
     <script src="../js/demo.js"></script>
 
+    
 
 </body>
 
