@@ -769,3 +769,18 @@ input[type="file"]{
     border-radius: 3px !important;
     background: #e4e4e4;
 }
+
+
+.staff-role{
+    background: #fff;
+    padding: 15px;
+    margin: 0 100px;
+}
+.staff h4{
+    margin-left: 50px;
+    font-size: 14px;
+}
+
+.staff .item{
+    margin: 0 48px;
+}

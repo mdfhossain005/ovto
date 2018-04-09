@@ -1,0 +1,75 @@
+
+.input-group .input-group-addon {
+    padding: 6px 12px;
+    border: 1px solid #dbdbdb;
+    border-right: none;
+    border-radius: 0;
+}
+.input-group input[type="text"], 
+.input-group .form-control{
+    border: 1px solid #dbdbdb;
+    border-left: none;
+    border-radius: 0;
+}
+.form-group > .form-control{
+    border: 1px solid #dbdbdb;
+    height: 48px;
+    padding: 6px 14px !important;
+}
+[type="checkbox"] + label {
+    padding-left: 35px;
+    font-size: 15px;
+    font-weight: normal;
+    height: 0;
+    color: #cacaca;
+}
+.form-group label{
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    color: #191919;
+}
+.checkbox {
+    margin-bottom: 25px;
+}
+.show-tick, .form-control-ovto {
+    width: 100% !important;
+    padding: 6px 0px !important;
+    height: 48px !important;
+}
+.show-tick > .dropdown-toggle:hover, .form-control-ovto > .dropdown-toggle:hover{
+    height: 46px;
+    background: transparent;
+    border-radius: 0;
+    padding:3px 12px !important;
+    bottom: 6px;
+}
+.show-tick > .dropdown-toggle:active, 
+.show-tick > .dropdown-toggle:focus,
+.form-control-ovto > .dropdown-toggle:active,
+.form-control-ovto > .dropdown-toggle:focus{
+    background: transparent;
+}
+.filter-option{
+    outline: 0;
+    z-index: 10;
+    color: #191919;
+}
+.carousel-control{
+    color: #dbdbdb;
+}
+.carousel-control.left, .carousel-control.right{
+    background-image: none;
+}
+.carousel-control {
+    top: 10% !important;
+    opacity: 1;
+}
+.carousel-control i.material-icons{
+    font-size: 48px;
+    text-shadow: none;
+}
+.carousel-control:hover, .carousel-control:focus{
+    color: #dbdbdb;
+}

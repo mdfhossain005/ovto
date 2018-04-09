@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-close);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-close">
+      <rect width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <g id="close" class="cls-1">
+    <rect class="cls-2" width="512" height="512"/>
+    <g id="close-2" data-name="close" transform="translate(-176 -177)">
+      <path id="Path_1" data-name="Path 1" d="M432,187c-135.641,0-246,110.358-246,246S296.358,679,432,679,678,568.642,678,433,567.642,187,432,187Zm0,449.835C319.615,636.835,228.176,545.4,228.176,433S319.615,229.176,432,229.176,635.835,320.615,635.835,433,544.382,636.835,432,636.835Zm0,0" transform="translate(0)"/>
+      <path id="Path_2" data-name="Path 2" d="M423.53,234.154a21.077,21.077,0,0,0-29.808,0l-65.383,65.383-65.365-65.383a21.089,21.089,0,1,0-29.822,29.826l65.379,65.365-65.379,65.383a21.087,21.087,0,1,0,29.822,29.822l65.365-65.383,65.383,65.383a21.082,21.082,0,0,0,29.808-29.822l-65.365-65.369,65.365-65.38a21.1,21.1,0,0,0,0-29.826Zm0,0" transform="translate(103.66 103.667)"/>
+    </g>
+  </g>
+</svg>
