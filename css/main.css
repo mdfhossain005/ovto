@@ -316,6 +316,14 @@ input[type="file"]{
     padding: 0px 0 40px 0;
     border-radius: 5px;
 }
+.gree{
+    background: #56c0a8;
+    height: 120px;
+}
+.blu{
+    background: #39789e;
+    height: 120px;
+}
 .bg-lred{
     background: #e96e6e;
     height: 120px;
@@ -783,4 +791,16 @@ input[type="file"]{
 
 .staff .item{
     margin: 0 48px;
+}
+
+ul.expenses li{
+    width: 184px;
+    height: 184px;
+    background: #fff;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+ul.expenses li:first-child{
+    margin-left: 0;
 }
