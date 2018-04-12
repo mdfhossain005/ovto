@@ -1,0 +1,143 @@
+/* lg */ 
+@media (min-width: 1200px) {
+	
+}
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+}
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+    .login-carousel{
+        display: none;
+    }
+}
+
+/* xs */
+@media (max-width: 767px) {
+	.login-carousel{
+        display: none;
+    }
+    .slider-right {
+        margin: 10px 10px;
+    }
+    .signup-box{
+        margin: 10px;
+    }
+    .signup-page .signup-box .login{
+        font-size: 16px;
+    }
+    .add_food_item_head {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .mob-left{
+        width: 96px;
+    }
+    .thumb-left{
+        padding-left: 10px !important;
+    }
+    .actual-price{
+        padding-right: 7.5px !important;
+        padding-left: 0 !important;
+    }
+    .btn-suc, .btn-war{
+        padding-right: 15px !important;
+    }
+    .btn-dan, .btn-pri{
+        padding-left: 15px !important;
+    }
+    .btn-danger img, .btn-primary img, .btn-success img, .btn-warning img {
+        left: 0px;
+    }
+    .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
+        width: 47%;
+        margin-left: 15px !important;
+    }
+    .navbar .navbar-toggle{
+        margin-right: 48px;
+    }
+    .navbar .js-right-sidebar{
+        margin-top: 0;
+    }
+    .owl-theme .owl-controls .owl-buttons .owl-prev {
+        right: 25px;
+    }
+    .owl-theme .owl-controls .owl-buttons .owl-next {
+        left: 25px;
+    }
+    .fb-profile{
+        padding-left:15px !important;
+    }
+    .fb-profile-text b span span {
+        margin: 5px 10px;
+    }
+    .fb-image-profile {
+        margin: -48px 0px 0px 15px;
+        width: 15%;
+    }
+    .text-left span{
+        display: none;
+    }
+    a.res-logo {
+        bottom: 32px;
+        left: 40px;
+    }
+    .bg-vio{
+        padding-left: 15px !important;
+    }
+    .modal .modal-content .modal-body{
+        margin: 0 10px !important;
+    }
+    .modal .modal-footer{
+        margin: 0 30px !important;
+    }
+    .staff-role{
+        margin: 0;
+    }
+    .staff .item{
+        margin: 0;
+    }
+    ul.expenses li {
+        width: 300px;
+        height: 150px;
+        margin-left: 0 !important;
+    }
+    .pagination > li > a {
+        font-weight: normal;
+        padding: 8px 9px;
+        margin: 0 2px;
+        font-size: 12px;
+    }
+    .payment-left form {
+        margin: 30px 10px;
+    }
+    .admin-setRight .btn-main {
+        margin-top: 15px;
+        padding: 0 13px 0 100px;
+    }
+    .other-set .btn-other {
+        margin-top: 10px;
+        padding: 0 15px 0 100px;
+    }
+
+}
+
+/* XS Portrait */
+@media (max-width: 479px) {
+    .login-carousel{
+        display: none;
+    }
+	
+}
+
+
+@media (max-width: 320px) {
+   .login-carousel{
+        display: none;
+    }
+
+}
