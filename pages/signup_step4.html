@@ -27,6 +27,8 @@
     <!-- Custom Css -->
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/sign.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
+
 
 
     <!-- <link href="../css/themes/all-themes.css" rel="stylesheet" /> -->
@@ -37,13 +39,13 @@
         <div class="container">
             <div class="row"> 
                 <h4 class="text-center add_food_item_head">ADD MORE FOOD ITEM</h4>
-                <a href="signup_step3.html"><img class="img-responsive pull-left" src="../img/signup/arrow-left.svg" alt="" width="128"></a>
+                <a href="signup_step3.html"><img class="img-responsive pull-left mob-left" src="../img/signup/arrow-left.svg" alt="" width="128"></a>
             </div>
             <div class="row">
                 <form action="main.html">
                     <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1">
                         <div class="row">
-                            <div class="col-xs-9 col-sm-9 col-md-9" style="padding-left: 0;padding-right: 7.5px">
+                            <div class="col-xs-9 col-sm-9 col-md-9 thumb-left" style="padding-left: 0;padding-right: 7.5px">
                                 <a href="#" class="thumbnail" id="fileuploader">
                                     <img src="../img/signup/add-image.png" alt="">
                                 </a>
@@ -136,25 +138,25 @@
                                 <input type="password" class="form-control" id="password" placeholder="Add previous price" style="border:none">     
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6" style="padding-left: 7.5px;padding-right: 0">
+                        <div class="col-sm-6 col-md-6 actual-price" style="padding-left: 7.5px;padding-right: 0">
                             <div class="form-group form-group-ovto">
                                 <label for="password">Actual Price</label>
                                 <input type="password" class="form-control" id="password" placeholder="Add current price" style="border:none">                                    
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-6 col-md-6" style="padding-right: 7.5px">
+                            <div class="col-sm-6 col-md-6 btn-suc" style="padding-right: 7.5px">
                                 <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#available">AVAILABILTY <img src="../img/slider/arrow-right.svg" width="64" alt=""></button>
                             </div>
-                            <div class="col-sm-6 col-md-6" style="padding-left: 7.5px;">
+                            <div class="col-sm-6 col-md-6 btn-dan" style="padding-left: 7.5px;">
                                 <button type="button" class="btn btn-danger btn-block" data-toggle="modal" data-target="#discount">DISCOUNT <img src="../img/slider/arrow-right.svg" alt="" width="64"></button>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-6 col-md-6" style="padding-right: 7.5px">
+                            <div class="col-sm-6 col-md-6 btn-war" style="padding-right: 7.5px">
                                 <button type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#vat">VAT <img src="../img/slider/arrow-right.svg" alt="" width="64"></button>
                             </div>
-                            <div class="col-sm-6 col-md-6" style="padding-left: 7.5px;">
+                            <div class="col-sm-6 col-md-6 btn-pri" style="padding-left: 7.5px;">
                                 <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#extracharge">EXTRA CHARGE <img src="../img/slider/arrow-right.svg" width="64" alt=""></button>
                             </div>
                         </div>
