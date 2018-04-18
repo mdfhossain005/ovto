@@ -316,14 +316,6 @@ input[type="file"]{
     padding: 0px 0 40px 0;
     border-radius: 5px;
 }
-.gree{
-    background: #56c0a8;
-    height: 120px;
-}
-.blu{
-    background: #39789e;
-    height: 120px;
-}
 .bg-lred{
     background: #e96e6e;
     height: 120px;
@@ -793,14 +785,37 @@ input[type="file"]{
     margin: 0 48px;
 }
 
-ul.expenses li{
-    width: 184px;
-    height: 184px;
-    background: #fff;
-    vertical-align: middle;
-    margin-left: 15px;
-    margin-bottom: 10px;
+.noti li{
+    margin-right: 70px;
 }
-ul.expenses li:first-child{
-    margin-left: 0;
+.noti-table tbody tr td{
+    padding: 15px 10px 50px 10px;
+}
+.noti-table tbody tr td h5{
+    margin-top: 4px;
+}
+
+.sup-list-item{
+    border-bottom: 5px solid #f03434;
+    display: block;
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 10px 0;
+}
+.sup-list-item h5{
+    margin-top: 15px;
+}
+.sup-list-item p{
+    margin-bottom: 0;
+    margin-top: 3px;
+}
+.sup-list-item b{
+    margin-top: 15px;
+    display: block
+}
+.sup-list-item a.btn-ovto{
+    margin-bottom: 0;
+    padding: 1px 30px;
+    height: 36px;
+    margin-top: 7px;
 }
