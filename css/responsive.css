@@ -24,6 +24,9 @@
     .slider-right {
         margin: 10px 10px;
     }
+    .card .body {
+        padding: 20px 10px;
+    }
     .signup-box{
         margin: 10px;
     }
@@ -55,7 +58,8 @@
     }
     .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
         width: 47%;
-        margin-left: 15px !important;
+        margin-left: 50px !important;
+        padding: 7px 12px;
     }
     .navbar .navbar-toggle{
         margin-right: 48px;
@@ -67,10 +71,10 @@
         right: 25px;
     }
     .owl-theme .owl-controls .owl-buttons .owl-next {
-        left: 25px;
+        left: 10px;
     }
     .fb-profile{
-        padding-left:15px !important;
+        padding-left:10px !important;
     }
     .fb-profile-text b span span {
         margin: 5px 10px;
@@ -95,14 +99,18 @@
     .modal .modal-footer{
         margin: 0 30px !important;
     }
+    .staff-container{
+        padding: 0;
+    }
     .staff-role{
         margin: 0;
+        padding: 15px 0;
     }
     .staff .item{
         margin: 0;
     }
     ul.expenses li {
-        width: 300px;
+        width: 265px;
         height: 150px;
         margin-left: 0 !important;
     }
@@ -123,6 +131,48 @@
         margin-top: 10px;
         padding: 0 15px 0 100px;
     }
+    .revenue-body{
+        margin-left: 20px !important;
+    }
+    .order-list h4 {
+        margin-top: 25px;
+    }
+    .btn-bill {
+        margin: 50px 10px 10px 5px;
+    }
+    .btn-success-order, .btn-danger-order {
+        padding: 15px 34px;
+    }
+    .btn-success-served {
+        margin: 0 10px 0 5px;
+    }
+    .waiter-list h4 {
+        margin-top: 10px;
+    }
+    .order-l h4{
+        margin-top: 5px;
+    }
+    .order-l ul {
+        margin-top: 10px;
+    }
+    .order-l b {
+        margin-top: 10px;
+    }
+    .order-l a img {
+        margin-top: 20px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .noti li {
+        margin-right: 48px;
+    }
+    .waiter-fb-p-text b span span{
+        margin: 0 !important;
+    }
+    .table-form {
+        margin: 0 50px;
+    }
 
 }
 
@@ -131,6 +181,12 @@
     .login-carousel{
         display: none;
     }
+    ul.expenses li {
+        width: 315px;
+        height: 150px;
+        margin-left: 0 !important;
+    }
+    
 	
 }
 
@@ -139,5 +195,12 @@
    .login-carousel{
         display: none;
     }
+    ul.expenses li {
+        width: 265px;
+        height: 150px;
+        margin-left: 0 !important;
+    }
+    
+    
 
 }

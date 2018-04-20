@@ -23,6 +23,7 @@
     <!-- Custom Css -->
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
 
     <!-- <link href="../css/themes/all-themes.css" rel="stylesheet" /> -->
 </head>
@@ -34,6 +35,7 @@
             <div class="container" style="padding:0">
                 <div class="navbar-header">
                     <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                    <a href="javascript:void(0);" class="bars"></a>
                     <a class="navbar-brand" href=""><img class="img-responsive pull-left" src="../img/logo.png" width="96"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -336,34 +338,34 @@
             <div class="container-fluid">
                 <div class="row" style="margin-top:20px;">
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box-2 bg-violet-blue hover-zoom-effect">
-                            <div class="his-content">
-                                <div class="text text-center">Current Month Expense</div>
-                                <div class="number text-center">15000 BDT</div>
+                        <div class="info-box-2 gree hover-zoom-effect">
+                            <div class="his-content center-block text-center">
+                                <div class="text">Current Month <br> Expense</div>
+                                <div class="number">15000 BDT</div>
                             </div>
                         </div>
 
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box-2 bg-violet-lviolet hover-zoom-effect">
-                            <div class="his-content text-center">
-                                <div class="text">Previous Month Expense</div>
+                        <div class="info-box-2 blu hover-zoom-effect">
+                            <div class="his-content center-block text-center">
+                                <div class="text">Previous Month <br> Expense</div>
                                 <div class="number">15000 BDT</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box-2 bg-blue-lblue hover-zoom-effect">
-                            <div class="his-content text-center">
-                                <div class="text">Current Year Expense</div>
+                        <div class="info-box-2 gree hover-zoom-effect">
+                            <div class="his-content center-block text-center">
+                                <div class="text">Current Year <br> Expense</div>
                                 <div class="number">15000 BDT</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box-2 bg-dblue-lblue hover-zoom-effect">
-                            <div class="his-content text-center">
-                                <div class="text">Previous Year Expense</div>
+                        <div class="info-box-2 blu hover-zoom-effect">
+                            <div class="his-content center-block text-center">
+                                <div class="text">Previous Year <br> Expense</div>
                                 <div class="number">19863.48 BDT</div>
                             </div>
                         </div>
@@ -371,51 +373,58 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <ul class="list-inline">
+                        <ul class="list-inline expenses">
                             <li>
-                                <h4>Restuarent Rent</h4>
-                                <h5>15000 BDT</h5>
-                                <a href=""> EDIT & ADD</a>
+                                <a href="" data-toggle="modal" data-target="#delete-expenses"><img class="pull-right" src="../img/main/close.svg" alt="" width="16"></a>
+                                <div class="text-center">
+                                    <h4>Restuarent Rent</h4>
+                                    <h5>15000 BDT</h5>
+                                    <a href="" data-toggle="modal" data-target="#add-edit-expense"> EDIT & ADD</a>
+                                </div>
                             </li>
                             <li>
-                                <h4>Water Bill</h4>
-                                <h5>15000 BDT</h5>
-                                <a href=""> EDIT & ADD</a>
+                                <a href="" data-toggle="modal" data-target="#delete-expenses"><img class="pull-right" src="../img/main/close.svg" alt="" width="16"></a>
+                                <div class="text-center">
+                                    <h4>Water Bill</h4>
+                                    <h5>15000 BDT</h5>
+                                    <a href="" data-toggle="modal" data-target="#add-edit-expense"> EDIT & ADD</a>
+                                </div>
                             </li>
                             <li>
-                                <h4>Internet Bill</h4>
-                                <h5>15000 BDT</h5>
-                                <a href=""> EDIT & ADD</a>
+                                <a href="" data-toggle="modal" data-target="#delete-expenses"><img class="pull-right" src="../img/main/close.svg" alt="" width="16"></a>
+                                <div class="text-center">
+                                    <h4>Internet Bill</h4>
+                                    <h5>15000 BDT</h5>
+                                    <a href="" data-toggle="modal" data-target="#add-edit-expense"> EDIT & ADD</a>
+                                </div>
+                            </li>
+                            <li class="text-center"></li>
+                            <li class="text-center"></li>
+                        <ul class="list-inline expenses">
+                            <li>
+                                <a href="" data-toggle="modal" data-target="#delete-expenses"><img class="pull-right" src="../img/main/close.svg" alt="" width="16"></a>
+                                <div class="text-center">
+                                    <h4>Staff Salary</h4>
+                                    <h5>15000 BDT</h5>
+                                    <a href="" data-toggle="modal" data-target="#add-edit-expense"> EDIT & ADD</a>
+                                </div>
                             </li>
                             <li>
-                                
+                                <a href="" data-toggle="modal" data-target="#delete-expenses"><img class="pull-right" src="../img/main/close.svg" alt="" width="16"></a>
+                                <div class="text-center">
+                                    <h4>Gas Bill</h4>
+                                    <h5>15000 BDT</h5>
+                                    <a href="" data-toggle="modal" data-target="#add-edit-expense"> EDIT & ADD</a>
+                                </div>
                             </li>
-                            <li>
-                                
-                            </li>
-                        </ul>
-                        <ul class="list-inline">
-                            <li>
-                                <h4>Staff Salary</h4>
-                                <h5>15000 BDT</h5>
-                                <a href=""> EDIT & ADD</a>
-                            </li>
-                            <li>
-                                <h4>Gas Bill</h4>
-                                <h5>15000 BDT</h5>
-                                <a href=""> EDIT & ADD</a>
-                            </li>
-                            <li>
-                                
-                            </li>
-                            <li>
+                            <li class="text-center"></li>
+                            <li class="text-center">
                                 <h4>Ovto Charge</h4>
                                 <h5>15000 BDT</h5>
-                                <a href=""> EDIT & ADD</a>
                             </li>
-                            <li>
+                            <li class="text-center" data-toggle="modal" data-target="#add-expenses-item" style="cursor: pointer;">
                                 <img src="" alt="">
-                                <h4>Add More Expense Item</h4>
+                                <h4>Add More <br> Expense Item</h4>
                             </li>
                         </ul>
                     </div>
@@ -441,8 +450,116 @@
             </div>
         </div>
 
+        <div class="modal fade" id="delete-expenses" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="text-center">Do you want to delete it?</h4>                    
+                    </div>
+                        
+                    <div class="modal-footer">
+                        <ul class="list-inline text-center">
+                            <li><button type="button" class="btn btn-ovto waves-effect" data-dismiss="modal">Yes</button></li>
+                            <li><button type="button" class="btn btn-ovto waves-effect" data-dismiss="modal">No</button></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    </section>
+        <div class="modal fade" id="add-expenses-item" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="text-center">Add New Expense Item</h4>                    
+                    </div>
+                    <div class="modal-body" style="margin: 0 170px 0 185px;">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="text" placeholder="Enter expense item name" style="background: #f7f7f7;padding: 6px 12px;">
+                        </div>
+                    </div>    
+                    <div class="modal-footer">
+                        <ul class="list-inline text-center">
+                            <li><button type="button" class="btn btn-ovto waves-effect" data-dismiss="modal">SUBMIT</button></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="add-edit-expense" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    </div>
+                    <div class="modal-body" style="margin: 0 170px 0 185px;">
+                        <div class="expense-list">
+                            <div class="row">
+                                <div class="col-xs-5 col-sm-5 col-md-5">
+                                    1.02.01.2018
+                                </div>
+                                <div class="col-xs-5 col-sm-5 col-md-5">
+                                    3698 BDT
+                                </div>
+                                <div class="col-xs-2 col-sm-2 col-md-2">
+                                    <img src="../img/main/close.svg" alt="" class="img-reponsive" class="img-reponsive" width="24">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-5 col-sm-5 col-md-5">
+                                    2.02.01.2018
+                                </div>
+                                <div class="col-xs-5 col-sm-5 col-md-5">
+                                    3698 BDT
+                                </div>
+                                <div class="col-xs-2 col-sm-2 col-md-2">
+                                    <img src="../img/main/close.svg" alt="" class="img-reponsive" class="img-reponsive" width="24">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-5 col-sm-5 col-md-5">
+                                    3.02.01.2018
+                                </div>
+                                <div class="col-xs-5 col-sm-5 col-md-5">
+                                    3698 BDT
+                                </div>
+                                <div class="col-xs-2 col-sm-2 col-md-2">
+                                    <img src="../img/main/close.svg" alt="" class="img-reponsive" class="img-reponsive" width="24">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-5 col-sm-5 col-md-5">
+                                    4.02.01.2018
+                                </div>
+                                <div class="col-xs-5 col-sm-5 col-md-5">
+                                    3698 BDT
+                                </div>
+                                <div class="col-xs-2 col-sm-2 col-md-2">
+                                    <img src="../img/main/close.svg" alt="" class="img-reponsive" width="24">
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Add More Restaurant Rent</h4>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="text" placeholder="Add more expense" style="background: #f7f7f7;padding: 6px 12px;">
+                        </div>
+                    </div>    
+                    <div class="modal-footer">
+                        <ul class="list-inline text-center">
+                            <li><button type="button" class="btn btn-ovto waves-effect" data-dismiss="modal">SUBMIT</button></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+        </section>
 
     <!-- Jquery Core Js -->
     <script src="../plugins/jquery/jquery.min.js"></script>

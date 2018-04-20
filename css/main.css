@@ -316,6 +316,14 @@ input[type="file"]{
     padding: 0px 0 40px 0;
     border-radius: 5px;
 }
+.gree{
+    background: #56c0a8;
+    height: 120px;
+}
+.blu{
+    background: #39789e;
+    height: 120px;
+}
 .bg-lred{
     background: #e96e6e;
     height: 120px;
@@ -785,16 +793,42 @@ input[type="file"]{
     margin: 0 48px;
 }
 
+ul.expenses li{
+    width: 184px;
+    height: 184px;
+    background: #fff;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+ul.expenses li:first-child{
+    margin-left: 0;
+}
+.expenses img{
+    margin-top: 10px;
+    margin-right: 7px;
+}
+.expenses h4{
+    margin-top: 60px;
+}
+.expenses a{
+    color: #46b692;
+    font-weight: 500;
+}
 .noti li{
     margin-right: 70px;
 }
 .noti-table tbody tr td{
-    padding: 15px 10px 50px 10px;
+    padding: 15px 10px 7px 10px;
 }
 .noti-table tbody tr td h5{
     margin-top: 4px;
 }
-
+.expense-list{
+    border:1px solid #00b16a;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
 .sup-list-item{
     
     display: block;
@@ -1013,4 +1047,7 @@ input:checked + .slider:before {
 }
 .order-l a img{
     margin-top: 45px;
+}
+.table-form{
+    margin: 0 150px;
 }
