@@ -22,7 +22,9 @@
 
     <!-- Custom Css -->
     <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/form.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
 
     <!-- <link href="../css/themes/all-themes.css" rel="stylesheet" /> -->
 </head>
@@ -483,13 +485,19 @@
                         </div>
                     </div> 
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="form-group">
-                                <label for="discount">Discount</label>
-                                <input type="email" class="form-control" id="discount" placeholder="Add discount percentage">
+                                <label for="text">Discount</label>                        
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <img src="../img/signup/email.svg" alt="" width="24">
+                                    </span>
+                                    <input type="text" class="form-control" name="text" placeholder="Add discount percentage" >
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4" style="margin-top: 25px;">
                             <button type="button" class="btn btn-ovto btn-block waves-effect" data-dismiss="modal">SUBMIT</button>
                         </div>
                     </div>
