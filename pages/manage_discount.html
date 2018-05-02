@@ -36,6 +36,7 @@
             <div class="container" style="padding:0">
                 <div class="navbar-header">
                     <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                    <a href="javascript:void(0);" class="bars"></a>
                     <a class="navbar-brand" href=""><img class="img-responsive pull-left" src="../img/logo.png" width="96"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -233,7 +234,7 @@
             <div class="menu">
                 <ul class="list">
                     <li class="active">
-                        <a href="javascript:void(0);" class="menu-toggle">
+                        <a href="summary.html">
                             <span>SUMMERY</span>
                         </a>
                         <ul class="ml-menu">
@@ -279,7 +280,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="manage_discount.html">
+                        <a href="manage_discount.html" class="active-bg">
                             <span>MANAGE DISCOUNT</span>
                         </a>
                     </li>
@@ -340,8 +341,8 @@
                     <div class="manage-discount text-right">
                         <div class="col-md-12">
                             <ul class="list-inline">
-                                <li><b>Select All</b> <input type="checkbox"></li>
-                                <li><b>Deselect All</b> <input type="checkbox"></li>
+                                <li><b>Select All</b> <input type="checkbox" id="selectall" onClick="selectAll(this)"></li>
+                                <!--<li><b>Deselect All</b> <input type="checkbox"></li>-->
                             </ul>
                         </div>
                     </div>
@@ -351,73 +352,35 @@
                                 <tbody>
                                     <tr>
                                         <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
                                     </tr>
                                     <tr>
                                         <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
                                     </tr>
                                     <tr>
                                         <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
                                     </tr>
                                     <tr>
                                         <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
                                     </tr>
                                     <tr>
                                         <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
                                     </tr>
                                     <tr>
                                         <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
                                     </tr>
                                     <tr>
                                         <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
                                     </tr>
                                     <tr>
                                         <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-md-4">
-                            <table class="table table-responsive table-manage">
-                                <tbody>
-                                    <tr>
-                                        <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -427,35 +390,73 @@
                                 <tbody>
                                     <tr>
                                         <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
                                     </tr>
                                     <tr>
                                         <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
                                     </tr>
                                     <tr>
                                         <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
                                     </tr>
                                     <tr>
                                         <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
                                     </tr>
                                     <tr>
                                         <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
                                     </tr>
                                     <tr>
                                         <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
                                     </tr>
                                     <tr>
                                         <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
                                     </tr>
                                     <tr>
                                         <td>1. Food 1</td>
-                                        <td class="text-right"><input type="checkbox"></td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-4">
+                            <table class="table table-responsive table-manage">
+                                <tbody>
+                                    <tr>
+                                        <td>1. Food 1</td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1. Food 1</td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1. Food 1</td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1. Food 1</td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1. Food 1</td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1. Food 1</td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1. Food 1</td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1. Food 1</td>
+                                        <td class="text-right"><input name="colors[]" type="checkbox"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -544,6 +545,14 @@
     
     <!-- Demo Js -->
     <script src="../js/demo.js"></script>
+
+    <script language="JavaScript">
+        function selectAll(source) {
+            checkboxes = document.getElementsByName('colors[]');
+            for(var i in checkboxes)
+                checkboxes[i].checked = source.checked;
+        }
+    </script>
 
 
 </body>

@@ -397,7 +397,6 @@ input[type="file"]{
     margin-bottom: 0px;
     border-radius: 7px;
     padding-bottom: 0px;
-    margin: 0 10px;
     text-align: left;
 }
 .description{
@@ -405,6 +404,7 @@ input[type="file"]{
       padding: 80px 20px 20px 20px;
       position: relative;
       bottom: 50px;
+      cursor: pointer;
 }
 .description h3 {
     font-size: 16px;
@@ -459,7 +459,6 @@ input[type="file"]{
     position: relative;
     overflow:hidden;
     z-index: 100;
-    margin: 0 10px;
 }
 .overlay-hover img{
     width: 100%!important;
@@ -531,15 +530,14 @@ input[type="file"]{
         float: left;
     }
 
-#owl-demo .item{
+.owl-item .item{
+    margin: 0px 5px;
+}
+.food-item .item{
   overflow: hidden;
 }
 
-#owl-demo .owl-item{
-  margin: 0 auto;
-}
-
-#owl-demo .item img{
+.food-item .item img{
   border: 3px solid #ffffff;
   padding-top: 20px;
   position: relative;
@@ -1051,3 +1049,53 @@ input:checked + .slider:before {
 .table-form{
     margin: 0 150px;
 }
+
+.active-bg{
+    background: #00b16a;
+}
+.active-bg span, .active-bg i{
+    color: #fff !important;
+}
+
+.table-order-analytics tbody tr td img{
+    border-radius: 100%;
+    border: 2px solid #fff;
+}
+
+.gallery-item{
+    height: 247px;
+}
+
+.waiter-gallery-item{
+    height: 350px;
+}
+.waiter-list h5{
+    margin: 0;
+}
+.waiter-list h5 span del{
+    color: #191919;
+    opacity: .5;
+    font-size: 13px;
+    font-family: 'Fira Sans', sans-serif;
+    position: relative;
+}
+
+.waiter-list h5 span i.material-icons {
+    color: #dbdbdb;
+    position: relative;
+    top: 6px;
+}
+.offer-price{
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.time-cat{
+    margin-bottom: 50px;
+}
+
+.description-item-time{
+    background: #f6a347;
+    color: #fff
+}
+

@@ -37,7 +37,7 @@ $( document ).ready(function() {
                 yAxes: [{
                     ticks: {
                         beginAtZero: true,
-                        stepSize : 100
+                        stepSize : 400
                     },
                     gridLines: {
                         display:true,
@@ -98,7 +98,7 @@ $( document ).ready(function() {
                 yAxes: [{
                     ticks: {
                         beginAtZero: true,
-                        stepSize : 100
+                        stepSize : 400
                     },
                     gridLines: {
                         display:true,
