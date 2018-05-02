@@ -39,29 +39,56 @@
         <nav class="navbar">
             <div class="container" style="padding:0">
                 <div class="navbar-header">
-                    <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
-                    <a class="navbar-brand" href=""><img class="img-responsive pull-left" src="../img/logo.png" width="96"></a>
-                </div>
-                <div class="collapse navbar-collapse" id="navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
+                    <!-- <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a> -->
+                    <a class="navbar-brand waiter-brand" href=""><img class="img-responsive pull-left" src="../img/logo.png" width="96"></a>
+                    <ul class="nav navbar-nav navbar-right hidden-md hidden-lg waiter-nav">
                         <!-- #END# Call Search -->
                         <!-- Notifications -->
                         <li>
-                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                                <img class="img-responsive" src="../img/waiter/dinner.svg" alt="" width="24" data-toggle="modal" data-target="#orderl">
+                            <a href="javascript:void(0);" data-toggle="modal" data-target="#orderl">
+                                <img class="img-responsive" src="../img/waiter/dinner.svg" alt="" width="24">
                                 <span class="label-count">7</span>
                             </a>
                         </li>
                         <!-- #END# Notifications -->
                         <!-- Tasks -->
                         <li>
-                            <a href="javascript:void(0);" data-toggle="dropdown" role="button">
+                            <a href="javascript:void(0);">
                                 <img class="img-responsive" src="../img/waiter/money.svg" alt="" width="30">
                             </a>
-                            
-                            
+                        </li>
+                        <li>
+                            <h5 style="margin: 0;position: relative;bottom: 20px;">1550 BDT</h5>
                         </li>
                         <!-- #END# Tasks -->
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img class="img-responsive" src="../img/super/logout.svg" alt="" data-toggle="modal" data-target="#logout" width="24">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
+                        <!-- #END# Call Search -->
+                        <!-- Notifications -->
+                        <li>
+                            <a href="javascript:void(0);" data-toggle="modal" data-target="#orderl">
+                                <img class="img-responsive" src="../img/waiter/dinner.svg" alt="" width="24">
+                                <span class="label-count">7</span>
+                            </a>
+                        </li>
+                        <!-- #END# Notifications -->
+                        <!-- Tasks -->
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img class="img-responsive" src="../img/waiter/money.svg" alt="" width="30">
+                            </a>
+                        </li>
+                        <!-- #END# Tasks -->
+                        <li>
+                            <h5 style="margin: 0;position: relative;top: 30px;">1550 BDT</h5>
+                        </li>
                         <li>
                             <a href="javascript:void(0);">
                                 <img class="img-responsive" src="../img/super/logout.svg" alt="" data-toggle="modal" data-target="#logout" width="24">
@@ -88,7 +115,7 @@
                                 </div>
                             </a> -->
                             <img align="left" class="fb-image-lg img-responsive" src="../img/main/cover-photo.png" alt=""/>
-                            <img align="left" class="fb-image-profile img-responsive" src="../img/main/profile-photo.png" alt="" />
+                            <img align="left" class="fb-image-profile img-responsive" src="../img/main/profile-photo.png" alt=""/>
                             <!-- <a href="" class="res-logo" data-toggle="modal" data-target="#reslogo">
                                 <div class="text-left">
                                     <span>Edit restaurent <br>logo </span>
@@ -97,10 +124,6 @@
                             </a> -->
                             <div class="fb-profile-text waiter-fb-p-text">
                                 <h4>FRIEND'S KITCHEN</h4>
-                                <b>
-                                    <span><img class="img-responsive pull-left" src="../img/main/score.svg" width="24"><span class="pull-left">Scores: 10016</span></span> 
-                                    <span><img class="img-responsive pull-left" src="../img/main/status.svg" width="24"><span class="pull-left">Status: Sliver</span></span>
-                                </b>
                             </div>
                         </div>
                     </div>
@@ -112,6 +135,9 @@
                                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                                 <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                                 <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
                             </ol>
 
                             <!-- <a href="" class="gallery" data-toggle="modal" data-target="#addgallery">
@@ -123,13 +149,22 @@
                             
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
-                                <div class="item active">
+                                <div class="item active waiter-gallery-item">
                                     <img class="img-responsive" src="../img/main/Inside-Restaurant.jpg" alt="">
                                 </div>
-                                <div class="item">
+                                <div class="item waiter-gallery-item">
                                     <img class="img-responsive" src="../img/main/Inside-Restaurant.jpg" alt="">
                                 </div>
-                                <div class="item">
+                                <div class="item waiter-gallery-item">
+                                    <img class="img-responsive" src="../img/main/Inside-Restaurant.jpg" alt="">
+                                </div>
+                                <div class="item waiter-gallery-item">
+                                    <img class="img-responsive" src="../img/main/Inside-Restaurant.jpg" alt="">
+                                </div>
+                                <div class="item waiter-gallery-item">
+                                    <img class="img-responsive" src="../img/main/Inside-Restaurant.jpg" alt="">
+                                </div>
+                                <div class="item waiter-gallery-item">
                                     <img class="img-responsive" src="../img/main/Inside-Restaurant.jpg" alt="">
                                 </div>
                             </div>
@@ -146,43 +181,41 @@
                         </div>
                     </div>
 
-                    <div class="col-md-12">
+                    <div class="col-md-12 time-cat">
                         <div id="owl-type" class="owl-carousel owl-theme team-items owl-waiter">
                             <div class="item">
                                 <div class="single-member">
-                                    <div class="description text-center">
+                                    <div class="description text-center des">
                                         <h5>BREAKFAST</h5>
                                     </div>
                                 </div>
                             </div>  <!-- item wrapper end -->
                             <div class="item">
                                 <div class="single-member">
-                                    <div class="description text-center">
+                                    <div class="description text-center des">
                                         <h5>LAUNCH</h5>
                                     </div>
                                 </div>
                             </div>  <!-- item wrapper end -->
                             <div class="item">
                                 <div class="single-member">
-                                    <div class="description text-center">
+                                    <div class="description text-center des">
                                         <h5>DINNER</h5>
                                     </div>
                                 </div>
                             </div>  <!-- item wrapper end -->
                             <div class="item">
                                 <div class="single-member">
-                                    <div class="description text-center">
+                                    <div class="description text-center des">
                                         <h5>MAXICAN NACHOS</h5>
                                     </div>
                                 </div>
                             </div>  <!-- item wrapper end -->
                             <div class="item">
                                 <div class="single-member">
-                                    <a href="#" >
-                                        <div class="description text-center">
-                                            <h5>ADD MORE FOOD</h5>
-                                        </div>
-                                    </a>
+                                    <div class="description text-center des">
+                                        <h5>MAXICAN NACHOS</h5>
+                                    </div>
                                 </div>
                             </div>  <!-- item wrapper end -->
                         </div>
@@ -192,39 +225,37 @@
                         <div id="owl-time" class="owl-carousel owl-theme team-items owl-waiter">
                             <div class="item">
                                 <div class="single-member">
-                                    <div class="description text-center">
+                                    <div class="description text-center desc">
                                         <h5>STREAM RICE</h5>
                                     </div>
                                 </div>
                             </div>  <!-- item wrapper end -->
                             <div class="item">
                                 <div class="single-member">
-                                    <div class="description text-center">
+                                    <div class="description text-center desc">
                                         <h5>THERI</h5>
                                     </div>
                                 </div>
                             </div>  <!-- item wrapper end -->
                             <div class="item">
                                 <div class="single-member">
-                                    <div class="description text-center">
+                                    <div class="description text-center desc">
                                         <h5>BURGER</h5>
                                     </div>
                                 </div>
                             </div>  <!-- item wrapper end -->
                             <div class="item">
                                 <div class="single-member">
-                                    <div class="description text-center">
+                                    <div class="description text-center desc">
                                         <h5>KHICHURI</h5>
                                     </div>
                                 </div>
                             </div>  <!-- item wrapper end -->
                             <div class="item">
                                 <div class="single-member">
-                                    <a href="#" >
-                                        <div class="description text-center">
-                                            <h5>POROTHA</h5>
-                                        </div>
-                                    </a>
+                                    <div class="description text-center desc">
+                                        <h5>POROTHA</h5>
+                                    </div>
                                 </div>
                             </div>  <!-- item wrapper end -->
                         </div>
@@ -241,7 +272,10 @@
                         <h4>BEEF BURGER</h4>
                         <h6>BURGER</h5>
                         <b>Available : 10:30 AM - 02:30 PM</b>
-                        <p><span>BDT 360</span> <span>BDT 250</span></p>
+                        <h5>
+                            <span ><del>BDT 360</del></span> 
+                            <span class="offer-price">BDT 260  <i class="material-icons">info_outline</i></span> 
+                        </h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="">read more...</a></p>
                     </div>
                     <div class="col-md-2 text-center">
@@ -256,7 +290,10 @@
                         <h4>BEEF BURGER</h4>
                         <h6>BURGER</h5>
                         <b>Available : 10:30 AM - 02:30 PM</b>
-                        <p><span>BDT 360</span> <span>BDT 250</span></p>
+                        <h5>
+                            <span ><del>BDT 360</del></span> 
+                            <span class="offer-price">BDT 260  <i class="material-icons">info_outline</i></span> 
+                        </h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="">read more...</a></p>
                     </div>
                     <div class="col-md-2 text-center">
@@ -271,7 +308,10 @@
                         <h4>BEEF BURGER</h4>
                         <h6>BURGER</h5>
                         <b>Available : 10:30 AM - 02:30 PM</b>
-                        <p><span>BDT 360</span> <span>BDT 250</span></p>
+                        <h5>
+                            <span ><del>BDT 360</del></span> 
+                            <span class="offer-price">BDT 260  <i class="material-icons">info_outline</i></span> 
+                        </h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="">read more...</a></p>
                     </div>
                     <div class="col-md-2 text-center">
@@ -286,7 +326,10 @@
                         <h4>BEEF BURGER</h4>
                         <h6>BURGER</h5>
                         <b>Available : 10:30 AM - 02:30 PM</b>
-                        <p><span>BDT 360</span> <span>BDT 250</span></p>
+                        <h5>
+                            <span ><del>BDT 360</del></span> 
+                            <span class="offer-price">BDT 260  <i class="material-icons">info_outline</i></span> 
+                        </h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="">read more...</a></p>
                     </div>
                     <div class="col-md-2 text-center">
@@ -301,7 +344,10 @@
                         <h4>BEEF BURGER</h4>
                         <h6>BURGER</h5>
                         <b>Available : 10:30 AM - 02:30 PM</b>
-                        <p><span>BDT 360</span> <span>BDT 250</span></p>
+                        <h5>
+                            <span ><del>BDT 360</del></span> 
+                            <span class="offer-price">BDT 260  <i class="material-icons">info_outline</i></span> 
+                        </h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="">read more...</a></p>
                     </div>
                     <div class="col-md-2 text-center">
@@ -316,7 +362,10 @@
                         <h4>BEEF BURGER</h4>
                         <h6>BURGER</h5>
                         <b>Available : 10:30 AM - 02:30 PM</b>
-                        <p><span>BDT 360</span> <span>BDT 250</span></p>
+                        <h5>
+                            <span ><del>BDT 360</del></span> 
+                            <span class="offer-price">BDT 260  <i class="material-icons">info_outline</i></span> 
+                        </h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="">read more...</a></p>
                     </div>
                     <div class="col-md-2 text-center">
@@ -331,7 +380,10 @@
                         <h4>BEEF BURGER</h4>
                         <h6>BURGER</h5>
                         <b>Available : 10:30 AM - 02:30 PM</b>
-                        <p><span>BDT 360</span> <span>BDT 250</span></p>
+                        <h5>
+                            <span ><del>BDT 360</del></span> 
+                            <span class="offer-price">BDT 260  <i class="material-icons">info_outline</i></span> 
+                        </h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="">read more...</a></p>
                     </div>
                     <div class="col-md-2 text-center">
@@ -346,7 +398,10 @@
                         <h4>BEEF BURGER</h4>
                         <h6>BURGER</h5>
                         <b>Available : 10:30 AM - 02:30 PM</b>
-                        <p><span>BDT 360</span> <span>BDT 250</span></p>
+                        <h5>
+                            <span ><del>BDT 360</del></span> 
+                            <span class="offer-price">BDT 260  <i class="material-icons">info_outline</i></span> 
+                        </h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="">read more...</a></p>
                     </div>
                     <div class="col-md-2 text-center">
@@ -584,6 +639,19 @@
             });
             $(".prev").click(function(){
             owl.trigger('owl.prev');
+            });
+        });
+
+        $(document).ready(function(){
+            var addclass = 'description-item-time';
+            var $cols = $('.des').click(function(e) {
+                $cols.removeClass(addclass);
+                $(this).addClass(addclass);
+            });
+            var addclass = 'description-item-time';
+            var $cols = $('.desc').click(function(e) {
+                $cols.removeClass(addclass);
+                $(this).addClass(addclass);
             });
         });
         

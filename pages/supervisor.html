@@ -46,7 +46,7 @@
                         <!-- #END# Call Search -->
                         <!-- Notifications -->
                         <li class="dropdown">
-                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
                                 <img class="img-responsive" src="../img/super/line-graph.svg" alt="" width="24">
                             </a>
                             <ul class="dropdown-menu revenue-body">
@@ -75,7 +75,7 @@
                         <!-- #END# Notifications -->
                         <!-- Tasks -->
                         <li>
-                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            <a href="javascript:void(0);">
                                 <img class="img-responsive" src="../img/super/smart-menu-edit.svg" alt="" width="24" data-toggle="modal" data-target="#edit-smart-menu">
                             </a>
                         </li>
@@ -257,20 +257,23 @@
                                     <li>
                                         <div class="row">
                                             <div class="sup-list-item served-order clearfix">
-                                                <div class="col-md-4">
+                                                <div class="col-md-2">
                                                     <ul class="list-inline">
                                                         <li><img src="../img/main/super.jpg" alt="" class="img-responsive img-sup" width="36"></li>
                                                         <li><h5>TA***</h5></li>
                                                     </ul>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-2">
                                                     <p class="table-code">Table Code: 14</p>
                                                     <p class="order-code">Order Code: 152</p>
                                                 </div>
-                                                <div class="col-md-1">
-                                                    <b>00:05</b>
-                                                </div>
                                                 <div class="col-md-3">
+                                                    <b>Total Bill: 1550 BDT</b>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <a href="" class="btn btn-default btn-ovto" data-toggle="modal" data-target="#printer"><i class="material-icons">print</i> <span>PRINT</span></a>
+                                                </div>
+                                                <div class="col-md-2">
                                                     <a href="" class="btn btn-default btn-ovto" data-toggle="modal" data-target="#done">Done</a>
                                                 </div>
                                             </div>
@@ -279,42 +282,48 @@
                                     <li>
                                         <div class="row">
                                             <div class="sup-list-item served-order clearfix">
-                                                <div class="col-md-4">
-                                                    <ul class="list-inline">
-                                                        <li><img src="../img/main/super.jpg" alt="" class="img-responsive img-sup" width="36"></li>
-                                                        <li><h5>TA***</h5></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <p class="table-code">Table Code: 14</p>
-                                                    <p class="order-code">Order Code: 152</p>
-                                                </div>
-                                                <div class="col-md-1">
-                                                    <b>00:05</b>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <a href="" class="btn btn-default btn-ovto" data-toggle="modal" data-target="#done">Done</a>
-                                                </div>
+                                                    <div class="col-md-2">
+                                                        <ul class="list-inline">
+                                                            <li><img src="../img/main/super.jpg" alt="" class="img-responsive img-sup" width="36"></li>
+                                                            <li><h5>TA***</h5></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <p class="table-code">Table Code: 14</p>
+                                                        <p class="order-code">Order Code: 152</p>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <b>Total Bill: 1550 BDT</b>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <a href="" class="btn btn-default btn-ovto" data-toggle="modal" data-target="#printer"><i class="material-icons">print</i> <span>PRINT</span></a>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <a href="" class="btn btn-default btn-ovto" data-toggle="modal" data-target="#done">Done</a>
+                                                    </div>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="row">
                                             <div class="sup-list-item served-order clearfix">
-                                                <div class="col-md-4">
+                                                <div class="col-md-2">
                                                     <ul class="list-inline">
                                                         <li><img src="../img/main/super.jpg" alt="" class="img-responsive img-sup" width="36"></li>
                                                         <li><h5>TA***</h5></li>
                                                     </ul>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-2">
                                                     <p class="table-code">Table Code: 14</p>
                                                     <p class="order-code">Order Code: 152</p>
                                                 </div>
-                                                <div class="col-md-1">
-                                                    <b>00:05</b>
-                                                </div>
                                                 <div class="col-md-3">
+                                                    <b>Total Bill: 1550 BDT</b>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <a href="" class="btn btn-default btn-ovto" data-toggle="modal" data-target="#printer"><i class="material-icons">print</i> <span>PRINT</span></a>
+                                                </div>
+                                                <div class="col-md-2">
                                                     <a href="" class="btn btn-default btn-ovto" data-toggle="modal" data-target="#done">Done</a>
                                                 </div>
                                             </div>
@@ -365,6 +374,16 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="printer" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-md" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="text-center">No Printer is Connected with the Device.<br> Please Check your printer connection </h4>                    
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         <div class="modal fade" id="edit-smart-menu" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-md" role="document">

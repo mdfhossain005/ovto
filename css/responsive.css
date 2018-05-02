@@ -1,11 +1,23 @@
+@media (min-width: 1440px){
+    ul.expenses li {
+        width: 199px;
+        height: 199px;
+    }
+}
 /* lg */ 
-@media (min-width: 1200px) {
-	
+@media (min-width: 1200px) and (max-width: 1280px) {
+	ul.expenses li {
+        width: 167px;
+        height: 167px;
+    }
 }
 
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
-
+    ul.expenses li {
+        width: 177px;
+        height: 177px;
+    }
 
 }
 
@@ -13,6 +25,10 @@
 @media (min-width: 768px) and (max-width: 991px) {
     .login-carousel{
         display: none;
+    }
+    ul.expenses li {
+        width: 127px;
+        height: 167px;
     }
 }
 
@@ -173,7 +189,17 @@
     .table-form {
         margin: 0 50px;
     }
-
+    .waiter-gallery-item {
+        height: auto;
+    }
+    .navbar > .container .waiter-brand{
+        margin-left: 0 !important;
+        width: auto !important;
+    }
+    .waiter-nav > li > a {
+        padding: 7px 7px 7px 7px;
+        margin: 10px 10px;
+    }
 }
 
 /* XS Portrait */

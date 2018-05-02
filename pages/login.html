@@ -35,7 +35,7 @@
         
                 <div class="card">
                     <div class="body">
-                        <form id="login" action="">
+                        <form id="login" action="main.html">
                             <div class="login text-center">LOGIN</div>
                             <div class="msg text-center">Welcome to Ovto</div>
                             <div class="form-group">
@@ -66,7 +66,7 @@
                             <button type="submit" class="btn btn-block btn-lg btn-ovto waves-effect" type="submit">LOGIN</button>
         
                             <div class="m-t-25 m-b--5 text-center">
-                                <a href="">Forgot Password?</a>
+                                <a href="" data-toggle="modal" data-target="#forgot-password">Forgot Password?</a>
                             </div>
                             <div class="m-t-25 m-b--5 text-center ac">
                                 <label for="terms">Don’t have an account? <a href="signup_step1.html"> Create Account</a></label>
@@ -78,6 +78,25 @@
             </div>
         </div>
     </section>
+
+    <div class="modal fade" id="forgot-password" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="text-center">Forgot your password? </h3>                    
+                </div>
+                <div class="modal-body" style="margin: 0 170px 0 185px;">
+                    <div class="form-group">
+                        <label for="">Reset Password</label>
+                        <input type="email" class="form-control" name="email" placeholder="Enter your email address" style="background: #f7f7f7;padding: 6px 12px;">
+                    </div>
+                </div>    
+                <div class="modal-footer" style="margin: 0 170px 0 185px;">
+                    <button type="button" class="btn btn-ovto waves-effect btn-block" data-dismiss="modal">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Jquery Core Js -->

@@ -188,7 +188,14 @@ textarea.form-control {
     font-weight: 600;
     margin-top: 20px;
 }
-.image-upload{
+.img-up > input{
+    display: none; 
+}
+.img-up img{
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.image-upload, .img-up{
     line-height: 0;
 }
 .image-upload > input{
@@ -219,6 +226,12 @@ textarea.form-control {
 .blobselect-item{
     font-size: 12px;
 }
+.optional{
+    font-size: 10px;
+    font-weight: 400;
+    color: #40514e;
+}
 
-
-
+.ca-dropdown .dropdown-menu{
+    max-height: 100px !important;
+}

@@ -20,10 +20,6 @@
     <!-- Animation Css -->
     <link href="../plugins/animate-css/animate.css" rel="stylesheet" />
 
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="../plugins/owl-carousel/css/owl.carousel.css"/>
-    <link rel="stylesheet" href="../plugins/owl-carousel/css/owl.theme.css"/>
-
     <!-- Custom Css -->
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
@@ -39,7 +35,7 @@
             <div class="container" style="padding:0">
                 <div class="navbar-header">
                     <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
-                    <a class="navbar-brand" href="summery.html" style="border: 1px solid #46b692;"><img class="img-responsive pull-left" src="../img/main/menu-line.svg" width="24"> <span>DASHBOARD</span></a>
+                    <a class="navbar-brand" href="summary.html" style="border: 1px solid #46b692;"><img class="img-responsive pull-left" src="../img/main/menu-line.svg" width="24"> <span>DASHBOARD</span></a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -235,13 +231,13 @@
             <div class="list-top">
                 <ul class="list-unstyled">
                     <li>
-                        <a href="">
+                        <a href="" data-toggle="modal" data-target="#addpromotion">
                             <img src="../img/main/upload.svg" alt="" class="img-responsive pull-left clearfix" width="24">
                             <span class="clearfix">Upload Promotional Picture</span> 
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="" data-toggle="modal" data-target="#edit-smart-menu">
                             <img src="../img/main/smart-menu-edit.svg" alt="" class="img-responsive pull-left clearfix" width="24">
                             <span class="clearfix">Edit Smart Menu</span>
                         </a>
@@ -266,7 +262,7 @@
                     <li >
                         <a href="">
                             <img src="../img/main/exit.svg" alt="" class="img-responsive pull-left clearfix" width="24">
-                            <span class="clearfix">logout</span>
+                            <span class="clearfix">Logout</span>
                         </a>
                     </li>
                 </ul>
@@ -320,13 +316,19 @@
                             
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
-                                <div class="item active">
+                                <div class="item active gallery-item">
                                     <img class="img-responsive" src="../img/main/Inside-Restaurant.jpg" alt="">
                                 </div>
-                                <div class="item">
+                                <div class="item gallery-item">
                                     <img class="img-responsive" src="../img/main/Inside-Restaurant.jpg" alt="">
                                 </div>
-                                <div class="item">
+                                <div class="item gallery-item">
+                                    <img class="img-responsive" src="../img/main/Inside-Restaurant.jpg" alt="">
+                                </div>
+                                <div class="item gallery-item">
+                                    <img class="img-responsive" src="../img/main/Inside-Restaurant.jpg" alt="">
+                                </div>
+                                <div class="item gallery-item">
                                     <img class="img-responsive" src="../img/main/Inside-Restaurant.jpg" alt="">
                                 </div>
                             </div>
@@ -343,7 +345,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" style="margin-bottom:50px;">
+                <div class="row" style="margin-bottom:20px;">
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 bg-vio" style="padding-left:0;">
                         <div class="info-box-2 bg-violet hover-zoom-effect">
                             <div class="icon">
@@ -391,102 +393,117 @@
                     </div>
                 </div>
                 <div class="row">
-
-                    <div id="owl-demo" class="owl-carousel owl-theme team-items">
-                        <div class="item">
-                            <div class="overlay-hover">
-                                <img src="../img/main/01burgers.png" alt="" class="img-responsive">
-                            </div>
-                            <div class="single-member">
-                                <div class="description">
-                                    <h3>Nachos</h3>
-                                    <h5>MAXICAN NACHOS</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-                                    <p>Category: Lorem</p>
-                                    <p>Subcategory: Ipsum</p>
-                                    <p>Available: 10:20 AM - 4:00 PM</p>
-                                    <h4 class="text-center">
-                                        <span class="pull-left"><del>BDT 360</del></span> 
-                                        <span class="pull-right">BDT 260  <i class="material-icons">info_outline</i></span> 
-                                       
-                                    </h4>
-                                    <button class="btn btn-default btn-sm btn-share"><i class="material-icons">share</i> Share now</button>
+                    <div class="col-md-12 text-right">
+                        <a href="add_more_food_item.html" class="btn btn-defult btn-ovto">+ Add More Food Item</a>
+                    </div>
+                    <div class="food-item">
+                        <div class="col-md-3" style="padding-left:0;">
+                            <div class="item">
+                                <div class="overlay-hover">
+                                    <img src="../img/main/01burgers.png" alt="" class="img-responsive">
                                 </div>
-                            </div>
-                        </div>  <!-- item wrapper end -->
-                        <div class="item">
-                            <div class="overlay-hover">
-                                <img src="../img/main/02nachos.png" alt="" class="img-responsive">
-                            </div>
-                            <div class="single-member">
-                                <div class="description">
-                                    <h3>Nachos</h3>
-                                    <h5>MAXICAN NACHOS</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-                                    <p>Category: Lorem</p>
-                                    <p>Subcategory: Ipsum</p>
-                                    <p>Available: 10:20 AM - 4:00 PM</p>
-                                    <h4 class="text-center">
-                                        <span class="pull-left"><del>BDT 360</del></span> 
-                                        <span class="pull-right">BDT 260  <i class="material-icons">info_outline</i></span> 
-                                       
-                                    </h4>
-                                    <button class="btn btn-default btn-sm btn-share"><i class="material-icons">share</i> Share now</button>
-                                </div>
-                            </div>
-                        </div>  <!-- item wrapper end -->
-                        <div class="item">
-                            <div class="overlay-hover">
-                                <img src="../img/main/03food.png" alt="" class="img-responsive">
-                            </div>
-                            <div class="single-member">
-                                <div class="description">
-                                    <h3>Nachos</h3>
-                                    <h5>MAXICAN NACHOS</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-                                    <p>Category: Lorem</p>
-                                    <p>Subcategory: Ipsum</p>
-                                    <p>Available: 10:20 AM - 4:00 PM</p>
-                                    <h4 class="text-center">
-                                        <span class="pull-left"><del>BDT 360</del></span> 
-                                        <span class="pull-right">BDT 260  <i class="material-icons">info_outline</i></span> 
-                                       
-                                    </h4>
-                                    <button class="btn btn-default btn-sm btn-share"><i class="material-icons">share</i> Share now</button>
-                                </div>
-                            </div>
-                        </div>  <!-- item wrapper end -->
-                        <div class="item">
-                            <div class="overlay-hover">
-                                <img src="../img/main/01burgers.png" alt="" class="img-responsive">
-                            </div>
-                            <div class="single-member">
-                                <div class="description">
-                                    <h3>Nachos</h3>
-                                    <h5>MAXICAN NACHOS</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-                                    <p>Category: Lorem</p>
-                                    <p>Subcategory: Ipsum</p>
-                                    <p>Available: 10:20 AM - 4:00 PM</p>
-                                    <h4 class="text-center">
-                                        <span class="pull-left"><del>BDT 360</del></span> 
-                                        <span class="pull-right">BDT 260  <i class="material-icons">info_outline</i></span> 
-                                       
-                                    </h4>
-                                    <button class="btn btn-default btn-sm btn-share"><i class="material-icons">share</i> Share now</button>
-                                </div>
-                            </div>
-                        </div>  <!-- item wrapper end -->
-                        <div class="item last-item">
-                            <div class="single-member">
-                                <a href="#" >
-                                    <div class="description text-center">
-                                        <h1>+</h1>
-                                        <h5>ADD MORE FOOD</h5>
+                                <div class="single-member">
+                                    <div class="description">
+                                        <h3>Nachos</h3>
+                                        <ul class="list-inline">
+                                            <li><h5>MAXICAN NACHOS</h5></li>
+                                            <li class="pull-right"><a href=""><img src="../img/edit.svg" alt="" width="24" style="top: 0px;padding-top: 7px;"></a></li>
+                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                                        <p>Category: Lorem</p>
+                                        <p>Subcategory: Ipsum</p>
+                                        <p>Available: 10:20 AM - 4:00 PM</p>
+                                        <h4 class="text-center">
+                                            <span class="pull-left"><del>BDT 360</del></span> 
+                                            <span class="pull-right">
+                                                BDT 260  
+                                                <i class="material-icons">info_outline</i>
+                                            </span> 
+                                        
+                                        </h4>
+                                        <button class="btn btn-default btn-sm btn-share"><i class="material-icons">share</i> Share now</button>
                                     </div>
-                                </a>
+                                </div>
                             </div>
-                        </div>  <!-- item wrapper end -->
+                        </div>
+                        <div class="col-md-3">
+                            <div class="item">
+                                <div class="overlay-hover">
+                                    <img src="../img/main/02nachos.png" alt="" class="img-responsive">
+                                </div>
+                                <div class="single-member">
+                                    <div class="description">
+                                        <h3>Nachos</h3>
+                                        <ul class="list-inline">
+                                            <li><h5>MAXICAN NACHOS</h5></li>
+                                            <li class="pull-right"><a href=""><img src="../img/edit.svg" alt="" width="24" style="top: 0px;padding-top: 7px;"></a></li>
+                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                                        <p>Category: Lorem</p>
+                                        <p>Subcategory: Ipsum</p>
+                                        <p>Available: 10:20 AM - 4:00 PM</p>
+                                        <h4 class="text-center">
+                                            <span class="pull-left"><del>BDT 360</del></span> 
+                                            <span class="pull-right">BDT 260  <i class="material-icons">info_outline</i></span> 
+                                        
+                                        </h4>
+                                        <button class="btn btn-default btn-sm btn-share"><i class="material-icons">share</i> Share now</button>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col-md-3">
+                            <div class="item">
+                                <div class="overlay-hover">
+                                    <img src="../img/main/03food.png" alt="" class="img-responsive">
+                                </div>
+                                <div class="single-member">
+                                    <div class="description">
+                                        <h3>Nachos</h3>
+                                        <ul class="list-inline">
+                                            <li><h5>MAXICAN NACHOS</h5></li>
+                                            <li class="pull-right"><a href=""><img src="../img/edit.svg" alt="" width="24" style="top: 0px;padding-top: 7px;"></a></li>
+                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                                        <p>Category: Lorem</p>
+                                        <p>Subcategory: Ipsum</p>
+                                        <p>Available: 10:20 AM - 4:00 PM</p>
+                                        <h4 class="text-center">
+                                            <span class="pull-left"><del>BDT 360</del></span> 
+                                            <span class="pull-right">BDT 260  <i class="material-icons">info_outline</i></span> 
+                                        
+                                        </h4>
+                                        <button class="btn btn-default btn-sm btn-share"><i class="material-icons">share</i> Share now</button>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-md-3">
+                            <div class="item">
+                                <div class="overlay-hover">
+                                    <img src="../img/main/03food.png" alt="" class="img-responsive">
+                                </div>
+                                <div class="single-member">
+                                    <div class="description">
+                                        <h3>Nachos</h3>
+                                        <ul class="list-inline">
+                                            <li><h5>MAXICAN NACHOS</h5></li>
+                                            <li class="pull-right"><a href=""><img src="../img/edit.svg" alt="" width="24" style="top: 0px;padding-top: 7px;"></a></li>
+                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                                        <p>Category: Lorem</p>
+                                        <p>Subcategory: Ipsum</p>
+                                        <p>Available: 10:20 AM - 4:00 PM</p>
+                                        <h4 class="text-center">
+                                            <span class="pull-left"><del>BDT 360</del></span> 
+                                            <span class="pull-right">BDT 260  <i class="material-icons">info_outline</i></span> 
+                                        
+                                        </h4>
+                                        <button class="btn btn-default btn-sm btn-share"><i class="material-icons">share</i> Share now</button>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
                     </div>
 
                 </div>
@@ -563,6 +580,42 @@
                         <div class="form-group">                      
                             <input type="file" class="form-control" name="">
                         </div>
+                        <div class="form-group">                      
+                            <input type="file" class="form-control" name="">
+                        </div>
+                        <div class="form-group">                      
+                            <input type="file" class="form-control" name="">
+                        </div>
+                    </div>    
+                    <div class="modal-footer" style="margin:0 150px;">
+                        <button type="button" class="btn btn-ovto btn-block waves-effect" data-dismiss="modal">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="addpromotion" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="text-center">UPLOAD PROMOTIONAL PICTURE</h4>                    
+                    </div>
+                    <div class="modal-body" style="margin:0 60px;">
+                        <div class="form-group">                      
+                            <input type="file" class="form-control" name="">
+                        </div>
+                        <div class="form-group">                      
+                            <input type="file" class="form-control" name="">
+                        </div>
+                        <div class="form-group">                      
+                            <input type="file" class="form-control" name="">
+                        </div>
+                        <div class="form-group">                      
+                            <input type="file" class="form-control" name="">
+                        </div>
+                        <div class="form-group">                      
+                            <input type="file" class="form-control" name="">
+                        </div>
                     </div>    
                     <div class="modal-footer" style="margin:0 150px;">
                         <button type="button" class="btn btn-ovto btn-block waves-effect" data-dismiss="modal">SUBMIT</button>
@@ -570,6 +623,152 @@
                 </div>
             </div>
         </div> 
+
+        <div class="modal fade" id="edit-smart-menu" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a href=""><img src="../img/super/cancel.svg" alt="" class="img-responsive pull-right" width="32" data-dismiss="modal"></a>                  
+                    </div>
+                        
+                    <div class="modal-body edit-smart-menu">
+                        <h4>Breakfast</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <h5>Porotha</h5>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h6>> Zinger Porotha</h6>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="switch">
+                                                    <input type="checkbox">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h6>> Kurta porotha</h6>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                        </div> 
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Khichuri</h5>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h6>> Chicken khichuri</h6>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="switch">
+                                                    <input type="checkbox">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h6>> Beef Khichuri</h6>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4>Breakfast</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <h5>Porotha</h5>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h6>> Zinger Porotha</h6>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="switch">
+                                                    <input type="checkbox">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h6>> Kurta porotha</h6>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                        </div> 
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4>Breakfast</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <h5>Porotha</h5>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h6>> Zinger Porotha</h6>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="switch">
+                                                    <input type="checkbox">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h6>> Kurta porotha</h6>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                        </div> 
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </section>
@@ -585,9 +784,6 @@
 
     <!-- Slimscroll Plugin Js -->
     <script src="../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
-
-    <!-- Owl Carousel -->
-    <script src="../plugins/owl-carousel/js/owl.carousel.min.js"></script>
     
     <!-- Custom Js -->
     <script src="../js/custom.js"></script>
@@ -595,38 +791,7 @@
     <!-- Demo Js -->
     <script src="../js/demo.js"></script>
 
-    <script>
-        $("#owl-demo").owlCarousel({
-  
-            navigation : true, // Show next and prev buttons
-            // navigationText: ["prev","next"], 
-            navigationText: [
-                "<i class='material-icons'>chevron_left</i>",
-                "<i class='material-icons'>chevron_right</i>"
-                ],
-            slideSpeed : 300,
-            paginationSpeed : 400,
-            autoPlay: false,  
-            items : 4,
-            itemsDesktop:[1199,4],  
-            itemsDesktopSmall:[979,3],  //As above.
-            itemsTablet:[768,3],    //As above.
-            itemsMobile:[479,1],    //As above
-            goToFirst: true,    //Slide to first item if autoPlay reach end
-            goToFirstSpeed:1000 ,
-            pagination: false
-        });
-
-
-        // Custom Navigation Events
-        $(".next").click(function(){
-        owl.trigger('owl.next');
-        })
-        $(".prev").click(function(){
-        owl.trigger('owl.prev');
-        })
-        
-    </script>
+    
 
 </body>
 

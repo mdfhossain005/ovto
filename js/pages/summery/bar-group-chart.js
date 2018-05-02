@@ -60,7 +60,7 @@ $(function(){
                 yAxes: [{
                     ticks: {
                         beginAtZero: true,
-                        stepSize : 100
+                        stepSize : 200
                     },
                     gridLines: {
                         display:false,
@@ -144,7 +144,7 @@ $(function(){
                 yAxes: [{
                     ticks: {
                         beginAtZero: true,
-                        stepSize : 100
+                        stepSize : 200
                     },
                     gridLines: {
                         display:false,
