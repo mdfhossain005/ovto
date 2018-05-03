@@ -1022,6 +1022,9 @@ input:checked + .slider:before {
 .waiter-list a.btn{
     margin-top: 55px;
 }
+.waiter-list p a{
+    color: #46b692;
+}
 
 .order-l{
     background: #f4f4f4;
@@ -1097,5 +1100,25 @@ input:checked + .slider:before {
 .description-item-time{
     background: #f6a347;
     color: #fff
+}
+
+.tippy-tooltip.green-theme {
+    /* Your styling here. Example: */
+    background-color: #46b692;
+    color: #fff;
+  }
+  
+/* Top placement tooltip arrow (arrow will be on bottom side of tooltip) */
+.tippy-popper[x-placement^=right] .tippy-tooltip.green-theme .tippy-arrow {
+    border-right: 7px solid #46b692 !important; /* your color here */
+}
+.modal{
+    z-index: 1400;
+}
+.read-gallery-item{
+    height: 250px;
+}
+.readmore h4, .readmore h5{
+    color: #191919;
 }
 
