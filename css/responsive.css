@@ -148,7 +148,8 @@
         padding: 0 15px 0 100px;
     }
     .revenue-body{
-        margin-left: 20px !important;
+        margin-left: 0 !important;
+        width: 200px !important;
     }
     .order-list h4 {
         margin-top: 25px;

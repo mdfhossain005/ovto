@@ -10,6 +10,7 @@
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
     <link href="../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -19,6 +20,14 @@
 
     <!-- Animation Css -->
     <link href="../plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Share Css -->
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" />
+    <!--<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-classic.css" /> -->
+    <!-- <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" 
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-plain.css" /> />-->
+
 
     <!-- Custom Css -->
     <link href="../css/style.css" rel="stylesheet">
@@ -254,6 +263,12 @@
                             <span class="clearfix">Payment</span>
                         </a>
                     </li>
+                    <li >
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
                 </ul>
             </div>
 
@@ -421,7 +436,7 @@
                                             </span> 
                                         
                                         </h4>
-                                        <button class="btn btn-default btn-sm btn-share"><i class="material-icons">share</i> Share now</button>
+                                        <button class="btn btn-default btn-sm btn-share" data-toggle="modal" data-target="#socialshare"><i class="material-icons" >share</i> Share now</button>
                                     </div>
                                 </div>
                             </div>
@@ -447,7 +462,7 @@
                                             <span class="pull-right">BDT 260  <i class="material-icons">info_outline</i></span> 
                                         
                                         </h4>
-                                        <button class="btn btn-default btn-sm btn-share"><i class="material-icons">share</i> Share now</button>
+                                        <button class="btn btn-default btn-sm btn-share" data-toggle="modal" data-target="#socialshare"><i class="material-icons">share</i> Share now</button>
                                     </div>
                                 </div>
                             </div>    
@@ -473,7 +488,7 @@
                                             <span class="pull-right">BDT 260  <i class="material-icons">info_outline</i></span> 
                                         
                                         </h4>
-                                        <button class="btn btn-default btn-sm btn-share"><i class="material-icons">share</i> Share now</button>
+                                        <button class="btn btn-default btn-sm btn-share" data-toggle="modal" data-target="#socialshare"><i class="material-icons">share</i> Share now</button>
                                     </div>
                                 </div>
                             </div> 
@@ -499,7 +514,7 @@
                                             <span class="pull-right">BDT 260  <i class="material-icons">info_outline</i></span> 
                                         
                                         </h4>
-                                        <button class="btn btn-default btn-sm btn-share"><i class="material-icons">share</i> Share now</button>
+                                        <button class="btn btn-default btn-sm btn-share" data-toggle="modal" data-target="#socialshare"><i class="material-icons">share</i> Share now</button>
                                     </div>
                                 </div>
                             </div> 
@@ -770,6 +785,46 @@
             </div>
         </div>
 
+        <div id="tooltip-main" style="display: none;" class="tooltip-main">
+            <table class="text-left">
+                <tbody>
+                    <tr>
+                        <td>Price </td>
+                        <td> - 220/-</td>
+                    </tr>
+                    <tr>
+                        <td>15% VA </td>
+                        <td> - 20/-</td>
+                    </tr>
+                    <tr>
+                        <td>Service Charge </td>
+                        <td> - 10/-</td>
+                    </tr>
+                    <tr>
+                        <td>Discount 5% </td>
+                        <td> - 5/-</td>
+                    </tr>
+                    <tr>
+                        <td>Total </td>
+                        <td> - 250/-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="modal fade" id="socialshare" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="text-center">Share On</h4>                    
+                    </div>
+                    <div class="modal-body" style="margin:0 60px;">
+                        <div id="share"></div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
 
     </section>
 
@@ -784,12 +839,44 @@
 
     <!-- Slimscroll Plugin Js -->
     <script src="../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Tippy Tooltip JS -->
+    <script src="../js/tippy.all.min.js"></script>
+
+    <!-- Share JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
     
     <!-- Custom Js -->
     <script src="../js/custom.js"></script>
     
     <!-- Demo Js -->
     <script src="../js/demo.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            tippy('.description h4 span i.material-icons',{
+                delay: 100,
+                arrow: true,
+                arrowType: 'round',
+                size: 'regular',
+                duration: 500,
+                animation: 'scale',
+                theme: 'green',
+                placement: 'right',
+                arrow: true,
+                arrowType: 'sharp',
+                arrowTransform: 'scale(0.7)',
+                html: '#tooltip-main',
+            });
+        });
+
+        $(document).ready(function(){
+            $("#share").jsSocials({
+                shares: ["email", "twitter", "facebook", "googleplus", "linkedin", "pinterest", "stumbleupon", "whatsapp"]
+            });  
+        });
+        
+    </script>
 
     
 
