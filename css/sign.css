@@ -194,6 +194,8 @@ textarea.form-control {
 .img-up img{
     cursor: pointer;
     margin-bottom: 20px;
+    width:495px;
+    object-fit: cover;
 }
 .image-upload, .img-up{
     line-height: 0;
