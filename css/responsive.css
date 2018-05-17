@@ -201,6 +201,9 @@
         padding: 7px 7px 7px 7px;
         margin: 10px 10px;
     }
+    .media .media-body {
+        padding: 10px 10px 0px 10px;
+    }
 }
 
 /* XS Portrait */
