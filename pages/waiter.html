@@ -29,17 +29,14 @@
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/responsive.css" rel="stylesheet">
 
-    <!-- <link href="../css/themes/all-themes.css" rel="stylesheet" /> -->
 </head>
 <body>
 
     <section style="background:#f3f6f6">
         <!-- Top Bar -->
-        <!-- Top Bar -->
         <nav class="navbar">
             <div class="container" style="padding:0">
                 <div class="navbar-header">
-                    <!-- <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a> -->
                     <a class="navbar-brand waiter-brand" href=""><img class="img-responsive pull-left" src="../img/logo.png" width="96"></a>
                     <ul class="nav navbar-nav navbar-right hidden-md hidden-lg waiter-nav">
                         <!-- #END# Call Search -->
@@ -596,7 +593,6 @@
                                 <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                                 <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                                 <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
                             </ol>
 
                             <!-- <a href="" class="gallery" data-toggle="modal" data-target="#addgallery">
@@ -609,9 +605,6 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active read-gallery-item">
-                                    <img class="img-responsive" src="../img/main/Inside-Restaurant.jpg" alt="">
-                                </div>
-                                <div class="item read-gallery-item">
                                     <img class="img-responsive" src="../img/main/Inside-Restaurant.jpg" alt="">
                                 </div>
                                 <div class="item read-gallery-item">
@@ -745,13 +738,17 @@
         });
 
         $(document).ready(function(){
+
             var addclass = 'description-item-time';
-            var $cols = $('.des').click(function(e) {
+            var $cols = $('.desc').click(function(e) {
                 $cols.removeClass(addclass);
                 $(this).addClass(addclass);
             });
+        });
+
+        $(document).ready(function(){
             var addclass = 'description-item-time';
-            var $cols = $('.desc').click(function(e) {
+            var $cols = $('.des').click(function(e) {
                 $cols.removeClass(addclass);
                 $(this).addClass(addclass);
             });

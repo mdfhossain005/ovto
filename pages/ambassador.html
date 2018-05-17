@@ -20,18 +20,18 @@
     <!-- Animation Css -->
     <link href="../plugins/animate-css/animate.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <!-- Bootstrap Select Css -->
+    <link href="../plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
 
     <!-- Custom Css -->
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/responsive.css" rel="stylesheet">
 
-    <!-- <link href="../css/themes/all-themes.css" rel="stylesheet" /> -->
 </head>
 <body>
 
-    <section>
+    <section style="background:#f3f6f6">
         <!-- Top Bar -->
         <nav class="navbar">
             <div class="container" style="padding:0">
@@ -42,6 +42,53 @@
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <!-- #END# Call Search -->
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                <img class="img-responsive" src="../img/main/wallet.svg" alt="" width="24">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header"></li>
+                                <li class="body">
+                                    <div class="menu" style="padding: 5px 10px">
+                                        <ul class="list-inline">
+                                            <li>Add your </li>
+                                            <li><img src="../img/main/bKash-logo.png" alt="" width="48"></li>
+                                            <li>number</li>
+                                        </ul>
+                                        <b>to get your payment</b>
+                                        <input type="text" class="form-control" >
+                                        <h4 class="text-center">or</h4>
+                                        <ul class="list-inline">
+                                            <li>Add your </li>
+                                            <li><img src="../img/main/rocket-logo.png" alt="" width="48"></li>
+                                            <li>number</li>
+                                        </ul>
+                                        <b>to get your payment</b>
+                                        <input type="text" class="form-control">
+                                        <button class="btn btn-default btn-ovto btn-block" style="margin-top: 10px;">SUBMIT</button>
+                                    </div>
+                                </li>
+                                <li class="footer">
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Terms & Conditions -->
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                <img class="img-responsive" src="../img/main/info.svg" alt="" width="24">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header"></li>
+                                <li class="body">
+                                    <div class="menu" style="padding: 5px 10px">
+                                        <h4>Terms & Conditions</h4>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus veritatis illo, reiciendis atque deserunt dolor, suscipit iure officiis explicabo nihil itaque sapiente praesentium! Unde laudantium neque quaerat debitis dolorum eum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus veritatis illo, reiciendis atque deserunt dolor, suscipit iure officiis explicabo nihil itaque sapiente praesentium! Unde laudantium neque quaerat debitis dolorum eum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus veritatis illo, reiciendis atque deserunt dolor, suscipit iure officiis explicabo nihil itaque sapiente praesentium! Unde laudantium neque quaerat debitis dolorum eum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus veritatis illo, reiciendis atque deserunt dolor, suscipit iure officiis explicabo nihil itaque sapiente praesentium! Unde laudantium neque quaerat debitis dolorum eum.</p>
+                                    </div>
+                                </li>
+                                <li class="footer">
+                                </li>
+                            </ul>
+                        </li>
                         <!-- Notifications -->
                         <li class="dropdown">
                             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
@@ -226,91 +273,28 @@
                 </div>
             </div>
         </nav>
-
-        <!-- Left Sidebar -->
-        <aside id="leftsidebar" class="sidebar">
-            
-            <!-- Menu -->
-            <div class="menu">
-                <ul class="list">
-                    <li class="active">
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <span>SUMMERY</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="profit_history.html">
-                                    <i class="glyphicon glyphicon-triangle-right"></i>
-                                    <span>PROFIT HISTORY</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="revenue_history.html">
-                                    <i class="glyphicon glyphicon-triangle-right"></i>
-                                    <span>REVENUE HISTORY</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="expense_history.html">
-                                    <i class="glyphicon glyphicon-triangle-right"></i>
-                                    <span>EXPENSE HISTORY</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="order_history.html">
-                                    <i class="glyphicon glyphicon-triangle-right"></i>
-                                    <span>ORDER HISTORY</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="order_analytics.html">
-                            <span>ORDER ANALYTICS</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="staff-role.html">
-                            <span>STAFF ROLE</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="add_expenses.html">
-                            <span>ADD EXPENSES</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="manage_discount.html">
-                            <span>MANAGE DISCOUNT</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- #Menu -->
-        </aside>
-        <!-- #END# Left Sidebar -->
         
         <!-- Right Sidebar -->
         <aside id="rightsidebar" class="right-sidebar">
             
             <div class="list-top">
                 <ul class="list-unstyled">
-                    <li>
-                        <a href="">
+                    <!-- <li>
+                        <a href="" data-toggle="modal" data-target="#addpromotion">
                             <img src="../img/main/upload.svg" alt="" class="img-responsive pull-left clearfix" width="24">
                             <span class="clearfix">Upload Promotional Picture</span> 
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="" data-toggle="modal" data-target="#edit-smart-menu">
                             <img src="../img/main/smart-menu-edit.svg" alt="" class="img-responsive pull-left clearfix" width="24">
                             <span class="clearfix">Edit Smart Menu</span>
                         </a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="settings-admin.html">
                             <img src="../img/main/user.svg" alt="" class="img-responsive pull-left clearfix" width="24">
-                            <span class="clearfix">Settings</span>
+                            <span class="clearfix">Profile-Settings</span>
                         </a>
                     </li>
                     <li >
@@ -319,15 +303,22 @@
                             <span class="clearfix">Payment</span>
                         </a>
                     </li>
+                    <li><h5>Manual Opening/ Closing</h5></li>
+                    <li >
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
                 </ul>
             </div>
 
             <div class="list-bottom">
                 <ul class="list-unstyled">
                     <li >
-                        <a href="">
+                        <a href="" data-toggle="modal" data-target="#logout" width="24">
                             <img src="../img/main/exit.svg" alt="" class="img-responsive pull-left clearfix" width="24">
-                            <span class="clearfix">logout</span>
+                            <span class="clearfix">Logout</span>
                         </a>
                     </li>
                 </ul>
@@ -335,111 +326,230 @@
                 
         </aside>
 
-        <section class="content">
-            <div class="container-fluid">
-                <div class="row" style="margin-top:20px;">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box-2 bg-sky hover-zoom-effect">
-                            <div class="his-content">
-                                <div class="text">Total Revenue</div>
-                                <div class="number">589.48 BDT</div>
+        <div class="main" >
+            <div class="container">
+                <div class="row" style="margin-top: 15px;">
+                  <div class="col-md-10">
+                      <div class="row">
+                            <div class="col-md-6">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="../img/main/ambassador.png" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Friends Kitchen</h4>
+                                        <h6>Bashundhara R/A, Dhaka</h6>
+                                        <p>Opening Date: 26.04.2018</p>
+                                        <b><i class="material-icons">phone</i> +880174982871</b>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="../img/main/ambassador.png" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Friends Kitchen</h4>
+                                        <h6>Bashundhara R/A, Dhaka</h6>
+                                        <p>Opening Date: 26.04.2018</p>
+                                        <b><i class="material-icons">phone</i> +880174982871</b>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="../img/main/ambassador.png" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Friends Kitchen</h4>
+                                        <h6>Bashundhara R/A, Dhaka</h6>
+                                        <p>Opening Date: 26.04.2018</p>
+                                        <b><i class="material-icons">phone</i> +880174982871</b>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="../img/main/ambassador.png" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Friends Kitchen</h4>
+                                        <h6>Bashundhara R/A, Dhaka</h6>
+                                        <p>Opening Date: 26.04.2018</p>
+                                        <b><i class="material-icons">phone</i> +880174982871</b>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box-2 bg-yellow hover-zoom-effect">
+                          <div class="col-md-6">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="../img/main/ambassador.png" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Friends Kitchen</h4>
+                                        <h6>Bashundhara R/A, Dhaka</h6>
+                                        <p>Opening Date: 26.04.2018</p>
+                                        <b><i class="material-icons">phone</i> +880174982871</b>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="../img/main/ambassador.png" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Friends Kitchen</h4>
+                                        <h6>Bashundhara R/A, Dhaka</h6>
+                                        <p>Opening Date: 26.04.2018</p>
+                                        <b><i class="material-icons">phone</i> +880174982871</b>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="../img/main/ambassador.png" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Friends Kitchen</h4>
+                                        <h6>Bashundhara R/A, Dhaka</h6>
+                                        <p>Opening Date: 26.04.2018</p>
+                                        <b><i class="material-icons">phone</i> +880174982871</b>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="../img/main/ambassador.png" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Friends Kitchen</h4>
+                                        <h6>Bashundhara R/A, Dhaka</h6>
+                                        <p>Opening Date: 26.04.2018</p>
+                                        <b><i class="material-icons">phone</i> +880174982871</b>
+                                    </div>
+                                </div>
+                          </div>
+                      </div>
+                  </div>   
+                  <div class="col-md-2">
+                        <div class="info-box-2 bg-gree hover-zoom-effect">
                             <div class="his-content">
-                                <div class="text">Total Expenses</div>
-                                <div class="number">2836.48 BDT</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box-2 bg-green hover-zoom-effect">
-                            <div class="his-content">
-                                <div class="text">Total Profilt</div>
-                                <div class="number">589.48 BDT</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box-2 bg-mate hover-zoom-effect">
-                            <div class="his-content">
-                                <div class="text">Total Number of Orders</div>
+                                <div class="text">Active Restaurants</div>
                                 <div class="number">589</div>
+                                <h5>Total Restaurants <br> 720</h5>
                             </div>
                         </div>
-                    </div>
+                        <div class="info-box-2 bg-re hover-zoom-effect">
+                            <div class="his-content">
+                                <div class="text">Inactive Restaurants</div>
+                                <div class="number">153</div>
+                                <h5>Total Restaurants <br> 720</h5>
+                            </div>
+                        </div>
+                        <div class="info-box-2 bg-lem hover-zoom-effect">
+                            <div class="his-content">
+                                <div class="text">Total Payment <br>Received</div>
+                                <div class="number">1533.8 BDT</div>
+                            </div>
+                        </div>
+                        <div class="info-box-2 bg-blu hover-zoom-effect">
+                            <div class="his-content">
+                                <div class="text">Payment Receivable</div>
+                                <div class="number">533.8 BDT</div>
+                            </div>
+                        </div>
+                  </div>   
                 </div>
+            </div>
+        </div>
 
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="card">
-                            <div class="body">
-                                <!-- Nav tabs -->
-                                <ul class="nav nav-tabs pull-right" role="tablist">
-                                    <li role="presentation" class="active"><a href="#monthrep" data-toggle="tab">Monthly</a></li>
-                                    <li role="presentation"><a href="#yearrep" data-toggle="tab">Yearly</a></li>
-                                </ul>
-    
-                                <!-- Tab panes -->
-                                <div class="tab-content">
-                                    <div role="tabpanel" class="tab-pane fade in active" id="monthrep">
-                                        <canvas id="bar-chart-grouped-m" height="120"></canvas>
-                                    </div>
-                                    <div role="tabpanel" class="tab-pane fade" id="yearrep">
-                                        <canvas id="bar-chart-grouped-y" height="120"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                            <div class="card">
-                                <div class="body">
-                                    <!-- Nav tabs -->
-                                    <ul class="nav nav-tabs pull-right" role="tablist">
-                                        <li role="presentation" class="active"><a href="#monthor" data-toggle="tab">Monthly</a></li>
-                                        <li role="presentation"><a href="#yearor" data-toggle="tab">Yearly</a></li>
-                                    </ul>
         
-                                    <!-- Tab panes -->
-                                    <div class="tab-content">
-                                        <div role="tabpanel" class="tab-pane fade in active" id="monthor">
-                                            <canvas id="bar-chart-m" height="266"></canvas>
-                                        </div>
-                                        <div role="tabpanel" class="tab-pane fade" id="yearor">
-                                            <canvas id="bar-chart-y" height="266"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="ppupload" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="text-center">UPLOAD PROFILE PICTURE</h4>                    
-                    </div>
-                    <div class="modal-body" style="margin:0 60px;">
-                        <div class="form-group">                      
-                            <input type="file" class="form-control" name="">
-                        </div>
-                    </div>    
-                    <div class="modal-footer" style="margin:0 150px;">
-                        <button type="button" class="btn btn-ovto btn-block waves-effect" data-dismiss="modal">SUBMIT</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
 
     </section>
+
+    <div class="modal fade" id="ppupload" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="text-center">UPLOAD PROFILE PICTURE</h4>                    
+                </div>
+                <div class="modal-body" style="margin:0 60px;">
+                    <div class="form-group">                      
+                        <input type="file" class="form-control" name="">
+                    </div>
+                </div>    
+                <div class="modal-footer" style="margin:0 150px;">
+                    <button type="button" class="btn btn-ovto btn-block waves-effect" data-dismiss="modal">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="logout" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="text-center">Confirm Log Out?</h4>                    
+                </div>
+                    
+                <div class="modal-footer">
+                    <ul class="list-inline text-center">
+                        <li><button type="button" class="btn btn-ovto waves-effect" data-dismiss="modal">Yes</button></li>
+                        <li><button type="button" class="btn btn-ovto waves-effect" data-dismiss="modal">No</button></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="closeModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <select id="closehour" class="form-control show-tick" >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select id="closeminute" class="form-control show-tick">
+                        <option value="00">00</option>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="40">40</option>
+                        <option value="50">50</option>
+                    </select>
+                    <select id="cltime" class="form-control show-tick">
+                        <option value="10">AM</option>
+                        <option value="20">PM</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link waves-effect" id="okclose" data-dismiss="modal">OK</button>
+                    <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Jquery Core Js -->
     <script src="../plugins/jquery/jquery.min.js"></script>
@@ -452,11 +562,6 @@
 
     <!-- Slimscroll Plugin Js -->
     <script src="../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
-
-    <script src="../plugins/chartjs/chart.min.js"></script>
-    <script src="../js/pages/summery/bar-group-chart.js"></script>
-    <script src="../js/pages/summery/bar-chart.js"></script>
-
     
     <!-- Custom Js -->
     <script src="../js/custom.js"></script>
@@ -464,6 +569,7 @@
     <!-- Demo Js -->
     <script src="../js/demo.js"></script>
 
+    
 
 </body>
 
