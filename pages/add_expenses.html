@@ -384,7 +384,7 @@
                             <li>
                                 <a href="" data-toggle="modal" data-target="#delete-expenses"><img class="pull-right" src="../img/main/close.svg" alt="" width="16"></a>
                                 <div class="text-center">
-                                    <h4>Restuarent Rent</h4>
+                                    <h4>Restuarent<br> Rent</h4>
                                     <h5>15000 BDT</h5>
                                     <a href="" data-toggle="modal" data-target="#add-edit-restuarent"> EDIT & ADD</a>
                                 </div>
@@ -392,7 +392,7 @@
                             <li>
                                 <a href="" data-toggle="modal" data-target="#delete-expenses"><img class="pull-right" src="../img/main/close.svg" alt="" width="16"></a>
                                 <div class="text-center">
-                                    <h4>Water Bill</h4>
+                                    <h4>Water<br> Bill</h4>
                                     <h5>15000 BDT</h5>
                                     <a href="" data-toggle="modal" data-target="#add-edit-water"> EDIT & ADD</a>
                                 </div>
@@ -400,7 +400,7 @@
                             <li>
                                 <a href="" data-toggle="modal" data-target="#delete-expenses"><img class="pull-right" src="../img/main/close.svg" alt="" width="16"></a>
                                 <div class="text-center">
-                                    <h4>Internet Bill</h4>
+                                    <h4>Internet<br> Bill</h4>
                                     <h5>15000 BDT</h5>
                                     <a href="" data-toggle="modal" data-target="#add-edit-internet"> EDIT & ADD</a>
                                 </div>
@@ -411,7 +411,7 @@
                             <li>
                                 <a href="" data-toggle="modal" data-target="#delete-expenses"><img class="pull-right" src="../img/main/close.svg" alt="" width="16"></a>
                                 <div class="text-center">
-                                    <h4>Staff Salary</h4>
+                                    <h4>Staff<br> Salary</h4>
                                     <h5>15000 BDT</h5>
                                     <a href="" data-toggle="modal" data-target="#add-edit-staff"> EDIT & ADD</a>
                                 </div>
@@ -419,15 +419,15 @@
                             <li>
                                 <a href="" data-toggle="modal" data-target="#delete-expenses"><img class="pull-right" src="../img/main/close.svg" alt="" width="16"></a>
                                 <div class="text-center">
-                                    <h4>Gas Bill</h4>
+                                    <h4>Gas<br> Bill</h4>
                                     <h5>15000 BDT</h5>
                                     <a href="" data-toggle="modal" data-target="#add-edit-gas"> EDIT & ADD</a>
                                 </div>
                             </li>
                             <li class="text-center"></li>
-                            <li class="text-center">
-                                <h4>Ovto Charge</h4>
-                                <h5>15000 BDT</h5>
+                            <li class="text-center add-expenses-tooltip">
+                                <h4>Ovto<br> Charge</h4>
+                                <h5>15000 BDT <i class="material-icons" style="position: relative;top:5px;">info_outline</i></h5>
                             </li>
                             <li class="text-center" data-toggle="modal" data-target="#add-expenses-item" style="cursor: pointer;">
                                 <img src="" alt="">
@@ -832,7 +832,11 @@
             </div>
         </div>
 
-        
+        <div id="tooltip-main" style="display: none;" class="tooltip-main">
+            <p>Automatically system<br> generated</p>
+            <p>(0.25% of your revenue)</p>
+            <p>*Minimum Charge : 100 BDT</p>
+        </div>
 
         
 
@@ -851,12 +855,35 @@
     <!-- Slimscroll Plugin Js -->
     <script src="../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
+    <!-- Tippy Tooltip JS -->
+    <script src="../js/tippy.all.min.js"></script>
+
     
     <!-- Custom Js -->
     <script src="../js/custom.js"></script>
     
     <!-- Demo Js -->
     <script src="../js/demo.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            tippy('.add-expenses-tooltip h5 i.material-icons',{
+                delay: 100,
+                arrow: true,
+                arrowType: 'round',
+                size: 'regular',
+                duration: 500,
+                animation: 'scale',
+                theme: 'green',
+                placement: 'right',
+                arrow: true,
+                arrowType: 'sharp',
+                arrowTransform: 'scale(0.7)',
+                html: '#tooltip-main',
+            });
+        });
+        
+    </script>
 
 
 </body>
