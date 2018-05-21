@@ -1151,3 +1151,9 @@ input:checked + .slider:before {
 .media-left{
     padding-right: 0px;
 }
+.active-res{
+    border-right: 5px solid #00b16a;
+}
+.inactive-res{
+    border-right: 5px solid #f03434;
+}
